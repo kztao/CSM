@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/ecc_export_sess_puk"
+        android:hint="请输入公钥Hex"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+    <Spinner
+        app:layout_constraintTop_toBottomOf="@+id/ecc_export_sess_puk"
+        android:id="@+id/ecc_export_sess_spinner"
+        android:entries="@array/sym_alg"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </Spinner>
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/ecc_export_sess_spinner"
+        android:layout_marginTop="20dp"
+        android:id="@+id/ecc_export_sess_cipher"
+        android:hint="会话密钥密文为"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</android.support.constraint.ConstraintLayout>

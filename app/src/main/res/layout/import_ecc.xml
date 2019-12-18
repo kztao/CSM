@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+<EditText
+    android:id="@+id/import_ecc_pri"
+    android:hint="请输入私钥密文的Hex"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<EditText
+    app:layout_constraintTop_toBottomOf="@+id/import_ecc_pri"
+    android:layout_marginTop="10dp"
+    android:hint="请输入公钥Hex"
+    android:id="@+id/import_ecc_puk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+<EditText
+    android:id="@+id/import_ecc_cipher"
+    android:hint="请输入保护密钥的密文Hex"
+    app:layout_constraintTop_toBottomOf="@+id/import_ecc_puk"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

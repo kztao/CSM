@@ -1,0 +1,198 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/root"
+    tools:context=".MainActivity">
+
+
+    <EditText
+        android:id="@+id/UserPin"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="UserPin"
+        android:maxLength="16"
+        android:digits="1234567890"
+        android:textColor="#2b2a28"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        app:layout_constraintLeft_toLeftOf="@+id/root"/>
+
+    <EditText
+        app:layout_constraintRight_toRightOf="@+id/root"
+        android:id="@+id/SOPin"
+        android:maxLength="10"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="SOPin"
+        android:digits="1234567890"
+        android:textColor="#466e4b"
+        android:textSize="20dp"
+        android:gravity="center_vertical"
+        />
+    <View
+        app:layout_constraintTop_toBottomOf="@id/UserPin"
+        android:id="@+id/分割线1"
+        android:layout_width="match_parent"
+        android:layout_height="3.0dp"
+        android:background="#10000000"/>
+
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@+id/分割线1"
+        android:id="@+id/基础函数"
+        android:text="基础函数"
+        android:checked="true"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@id/分割线1"
+        app:layout_constraintLeft_toRightOf="@+id/基础函数"
+        android:id="@+id/对象管理函数"
+        android:text="对象管理函数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@id/分割线1"
+        app:layout_constraintLeft_toRightOf="@id/对象管理函数"
+        android:id="@+id/密钥管理函数"
+        android:text="密钥管理函数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"        />
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@id/基础函数"
+        android:id="@+id/加解密函数"
+        android:text="加解密函数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@id/对象管理函数"
+        app:layout_constraintLeft_toRightOf="@id/加解密函数"
+        android:id="@+id/消息摘要函数"
+        android:text="消息摘要函数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@id/对象管理函数"
+        app:layout_constraintLeft_toRightOf="@id/消息摘要函数"
+        android:id="@+id/签名验证函数"
+        android:text="签名验证函数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@id/加解密函数"
+        android:id="@+id/随机数函数"
+        android:text="随机数函数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@id/消息摘要函数"
+        app:layout_constraintLeft_toRightOf="@id/随机数函数"
+        android:id="@+id/扩展函数"
+        android:text="扩展函数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@id/随机数函数"
+        android:id="@+id/软卡初始设置流程"
+        android:text="软卡初始设置流程"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+
+    <CheckBox
+        app:layout_constraintTop_toBottomOf="@id/随机数函数"
+        app:layout_constraintLeft_toRightOf="@id/软卡初始设置流程"
+        android:id="@+id/打电话流程"
+        android:text="打电话流程"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        />
+    <View
+        app:layout_constraintTop_toBottomOf="@id/软卡初始设置流程"
+        android:id="@+id/分割线2"
+        android:layout_width="match_parent"
+        android:layout_height="3.0dp"
+        android:background="#20000000"/>
+    <RadioGroup
+        android:id="@+id/性能测试"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/分割线2">
+
+        <RadioButton
+            android:id="@+id/SM2性能测试"
+            android:text="SM2性能测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/SM4性能测试"
+            android:text="SM4性能测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <RadioButton
+            android:id="@+id/ZUC性能测试"
+            android:text="ZUC性能测试"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+    <View
+        android:id="@+id/分割线3"
+        android:layout_width="match_parent"
+        android:layout_height="3.0dp"
+        android:background="#30000000"
+        app:layout_constraintTop_toBottomOf="@+id/性能测试"
+        />
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/分割线3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/运行函数"
+        android:text="运行函数"
+        />
+    <Button
+        app:layout_constraintTop_toBottomOf="@id/分割线3"
+        app:layout_constraintLeft_toRightOf="@id/运行函数"
+        android:id="@+id/执行性能测试"
+        android:text="执行性能测试"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/执行性能测试"
+        app:layout_constraintTop_toBottomOf="@+id/分割线3"
+        android:text="生产软卡"
+        android:id="@+id/生产软卡"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <Button
+        app:layout_constraintLeft_toRightOf="@id/生产软卡"
+        app:layout_constraintTop_toBottomOf="@+id/分割线3"
+        android:text="重启"
+        android:id="@+id/重启"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+    <TextView
+        app:layout_constraintTop_toBottomOf="@id/运行函数"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/测试描述"
+        android:text="测试描述"
+        android:textAllCaps="false"
+        />
+
+
+
+
+</android.support.constraint.ConstraintLayout>

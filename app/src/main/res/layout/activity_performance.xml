@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PerformanceActivity">
+    
+<TextView
+    android:id="@+id/标头"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:textStyle="italic"
+    android:maxLines="1"
+    android:gravity="center"
+    android:hint="测试类型"
+    android:textSize="20dp"
+    />
+
+
+    <RadioGroup
+        android:visibility="gone"
+        app:layout_constraintTop_toBottomOf="@id/标头"
+        android:orientation="horizontal"
+        android:id="@+id/SM4工作模式"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:id="@+id/CBC"
+            android:text="CBC"
+            android:checked="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <RadioButton
+            android:id="@+id/CFB"
+            android:text="CFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/ECB"
+            android:text="ECB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+        <RadioButton
+            android:id="@+id/OFB"
+            android:text="OFB"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <View
+        app:layout_constraintTop_toBottomOf="@id/SM4工作模式"
+        android:id="@+id/分割SM4"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/分割SM4"
+        android:id="@+id/测试次数"
+        android:hint="测试次数"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:digits="1234567890"
+        />
+    <Button
+        android:id="@+id/执行Per"
+        android:text="执行"
+        android:background="#ffffff"
+        app:layout_constraintTop_toBottomOf="@id/分割SM4"
+        app:layout_constraintLeft_toRightOf="@id/测试次数"
+        app:layout_constraintRight_toLeftOf="@id/测试长度"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/分割SM4"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/测试长度"
+        android:hint="测试长度"
+        android:digits="1234567890"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        />
+    <ScrollView
+        android:id="@+id/sc"
+        app:layout_constraintTop_toBottomOf="@+id/测试次数"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <TextView
+            android:layout_marginTop="10dp"
+            android:id="@+id/JG"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="15dp"
+            android:hint="\n性能测试结果"
+            android:textStyle="bold"
+            />
+    </ScrollView>
+    <com.westone.csmmanager.ChartView
+        android:id="@+id/折线图"
+        app:layout_constraintTop_toBottomOf="@+id/sc"
+        android:layout_width="match_parent"
+        android:layout_height="300dp" />
+
+</android.support.constraint.ConstraintLayout>

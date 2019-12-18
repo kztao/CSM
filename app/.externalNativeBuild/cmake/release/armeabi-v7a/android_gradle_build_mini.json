@@ -1,0 +1,16 @@
+{
+  "buildFiles": [
+    "/home/wjr/CSM/app/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/app/.externalNativeBuild/cmake/release/armeabi-v7a --target clean"
+  ],
+  "libraries": {
+    "Test-Release-armeabi-v7a": {
+      "artifactName": "Test",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/app/.externalNativeBuild/cmake/release/armeabi-v7a --target Test",
+      "abi": "armeabi-v7a",
+      "output": "/home/wjr/CSM/app/build/intermediates/cmake/release/obj/armeabi-v7a/libTest.so"
+    }
+  }
+}

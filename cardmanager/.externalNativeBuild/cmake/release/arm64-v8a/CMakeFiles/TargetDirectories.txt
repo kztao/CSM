@@ -1,0 +1,7 @@
+/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/edit_cache.dir
+/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/SkfClient.dir
+/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/SkfJni.dir
+/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/Client.dir
+/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/RemoteCallClient.dir
+/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/rebuild_cache.dir
+/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a/CMakeFiles/TFCardManager.dir

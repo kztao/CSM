@@ -1,0 +1,1562 @@
+[1/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/RemoteCall/Mutex.cpp.o
+[2/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/scp02/Scp02Client.cpp.o
+[3/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/Communication/LocalSocketClient.cpp.o
+[4/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/Communication/BinderClient.cpp.o
+[5/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/RemoteCall/ContentFrame.cpp.o
+[6/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/RemoteCall/ContentFrame0001.cpp.o
+[7/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/RemoteCall/ContentFrame0002.cpp.o
+[8/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/RemoteCall/RemoteCall.cpp.o
+[9/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/RemoteCall/Return.pb.cc.o
+[10/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/RemoteCall/Pack.cpp.o
+[11/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/RemoteCall/GetPackageName.cpp.o
+[12/24] Building CXX object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/RemoteCall/MsgFrame.cpp.o
+[13/24] Building C object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/scp02/tiny_des.c.o
+[14/24] Building C object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/scp02/tiny_sha2.c.o
+[15/24] Building C object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/scp02/sm3.c.o
+/home/wjr/CSM/csm/src/main/jni/scp02/tiny_des.c:422:2: warning: implicitly declaring library function 'memset' with type 'void *(void *, int, unsigned int)' [-Wimplicit-function-declaration]
+        memset(sk, 0, sizeof(sk));
+        ^
+/home/wjr/CSM/csm/src/main/jni/scp02/tiny_des.c:422:2: note: include the header <string.h> or explicitly provide a declaration for 'memset'
+/home/wjr/CSM/csm/src/main/jni/scp02/tiny_des.c:524:4: warning: implicitly declaring library function 'memcpy' with type 'void *(void *, const void *, unsigned int)' [-Wimplicit-function-declaration]
+                        memcpy(iv, output, 8);
+                        ^
+/home/wjr/CSM/csm/src/main/jni/scp02/tiny_des.c:524:4: note: include the header <string.h> or explicitly provide a declaration for 'memcpy'
+2 warnings generated.
+[16/24] Building C object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/scp02/sm4.c.o
+[17/24] Building C object CMakeFiles/RemoteCallClient.dir/home/wjr/CSM/csm/src/main/jni/scp02/sm4_core.c.o
+[18/24] Linking CXX static library libRemoteCallClient.a
+[19/24] Building CXX object CMakeFiles/Client.dir/home/wjr/CSM/csm/src/main/jni/P11/pkcs11.pb.cc.o
+[20/24] Building CXX object CMakeFiles/Client.dir/home/wjr/CSM/csm/src/main/jni/P11/pkcs11f.cpp.o
+[21/24] Building CXX object CMakeFiles/Client.dir/home/wjr/CSM/csm/src/main/jni/P11/log.cpp.o
+[22/24] Building CXX object CMakeFiles/Client.dir/home/wjr/CSM/csm/src/main/jni/SKF/skf.pb.cc.o
+[23/24] Building CXX object CMakeFiles/Client.dir/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp.o
+/home/wjr/CSM/csm/src/main/jni/P11/log.cpp:56:14: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                if((buf[t] == '/'))
+                    ~~~~~~~^~~~~~
+/home/wjr/CSM/csm/src/main/jni/P11/log.cpp:56:14: note: remove extraneous parentheses around the comparison to silence this warning
+                if((buf[t] == '/'))
+                   ~       ^     ~
+/home/wjr/CSM/csm/src/main/jni/P11/log.cpp:56:14: note: use '=' to turn this equality comparison into an assignment
+                if((buf[t] == '/'))
+                           ^~
+                           =
+/home/wjr/CSM/csm/src/main/jni/P11/log.cpp:60:19: warning: equality comparison with extraneous parentheses [-Wparentheses-equality]
+                else if((buf[t] == ':'))
+                         ~~~~~~~^~~~~~
+/home/wjr/CSM/csm/src/main/jni/P11/log.cpp:60:19: note: remove extraneous parentheses around the comparison to silence this warning
+                else if((buf[t] == ':'))
+                        ~       ^     ~
+/home/wjr/CSM/csm/src/main/jni/P11/log.cpp:60:19: note: use '=' to turn this equality comparison into an assignment
+                else if((buf[t] == ':'))
+                                ^~
+                                =
+/home/wjr/CSM/csm/src/main/jni/P11/log.cpp:169:10: warning: 5 enumeration values not handled in switch: 'C_none', 'C_fatal', 'C_warning'... [-Wswitch]
+                switch(severity){
+                       ^
+3 warnings generated.
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:184:31: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+        pClient = getInstance("com.westone.csm.CSM");
+                              ^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:227:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:237:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:266:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:322:31: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+        pClient = getInstance("com.westone.csm.CSM");
+                              ^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:363:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:374:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:403:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:481:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:491:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:520:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:585:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:595:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:624:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:694:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:704:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:733:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:803:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:813:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:842:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:893:38: warning: comparison of array 'pDevInfo->Manufacturer' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pDevInfo->Manufacturer)
+                   ~~~~    ~~~~~~~~~~^~~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:897:38: warning: comparison of array 'pDevInfo->Issuer' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pDevInfo->Issuer)
+                   ~~~~    ~~~~~~~~~~^~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:901:38: warning: comparison of array 'pDevInfo->Label' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pDevInfo->Label)
+                   ~~~~    ~~~~~~~~~~^~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:905:38: warning: comparison of array 'pDevInfo->SerialNumber' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pDevInfo->SerialNumber)
+                   ~~~~    ~~~~~~~~~~^~~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:925:38: warning: comparison of array 'pDevInfo->Reserved' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pDevInfo->Reserved)
+                   ~~~~    ~~~~~~~~~~^~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:953:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:963:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:992:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1009:83: warning: comparison of array 'pDevInfo->Manufacturer' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pdevinfo().manufacturer().size() && NULL != pDevInfo->Manufacturer)
+                                                                ~~~~    ~~~~~~~~~~^~~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1014:77: warning: comparison of array 'pDevInfo->Issuer' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pdevinfo().issuer().size() && NULL != pDevInfo->Issuer)
+                                                          ~~~~    ~~~~~~~~~~^~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1019:76: warning: comparison of array 'pDevInfo->Label' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pdevinfo().label().size() && NULL != pDevInfo->Label)
+                                                         ~~~~    ~~~~~~~~~~^~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1024:83: warning: comparison of array 'pDevInfo->SerialNumber' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pdevinfo().serialnumber().size() && NULL != pDevInfo->SerialNumber)
+                                                                ~~~~    ~~~~~~~~~~^~~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1087:79: warning: comparison of array 'pDevInfo->Reserved' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pdevinfo().reserved().size() && NULL != pDevInfo->Reserved)
+                                                            ~~~~    ~~~~~~~~~~^~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1154:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1164:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1193:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1254:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1264:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1293:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1374:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1384:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1413:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1483:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1493:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1522:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1604:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1614:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1643:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1729:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1739:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1768:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1856:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1866:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1895:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1979:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:1989:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2018:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2083:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2093:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2122:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2225:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2235:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2264:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2342:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2352:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2381:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2456:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2466:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2495:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2568:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2578:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2607:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2672:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2682:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2711:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2797:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2807:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2836:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2903:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2913:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:2942:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3015:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3025:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3054:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3115:39: warning: comparison of array 'pFileInfo->FileName' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pFileInfo->FileName)
+                   ~~~~    ~~~~~~~~~~~^~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3146:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3156:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3185:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3190:81: warning: comparison of array 'pFileInfo->FileName' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pfileinfo().filename().size() && NULL != pFileInfo->FileName)
+                                                             ~~~~    ~~~~~~~~~~~^~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3290:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3300:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3329:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3416:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3426:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3455:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3537:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3547:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3576:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3647:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3657:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3686:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3759:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3769:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3798:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3863:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3873:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3902:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3975:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:3985:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4014:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4089:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4099:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4128:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4243:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4253:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4282:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4486:35: warning: comparison of array 'pBlob->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pBlob->XCoordinate)
+                   ~~~~    ~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4490:35: warning: comparison of array 'pBlob->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pBlob->YCoordinate)
+                   ~~~~    ~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4518:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4528:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4557:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4566:85: warning: comparison of array 'pBlob->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.mutable_pblob()->xcoordinate().size() && NULL != pBlob->XCoordinate)
+                                                                     ~~~~    ~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4571:85: warning: comparison of array 'pBlob->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.mutable_pblob()->ycoordinate().size() && NULL != pBlob->YCoordinate)
+                                                                     ~~~~    ~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4671:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4681:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4710:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4762:40: warning: comparison of array 'pSignature->r' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pSignature->r)
+                   ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4766:40: warning: comparison of array 'pSignature->s' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pSignature->s)
+                   ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4794:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4804:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4833:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4838:85: warning: comparison of array 'pSignature->r' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.mutable_psignature()->r().size() && NULL != pSignature->r)
+                                                                ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4843:85: warning: comparison of array 'pSignature->s' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.mutable_psignature()->s().size() && NULL != pSignature->s)
+                                                                ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4896:44: warning: comparison of array 'pECCPubKeyBlob->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pECCPubKeyBlob->XCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4900:44: warning: comparison of array 'pECCPubKeyBlob->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pECCPubKeyBlob->YCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4912:40: warning: comparison of array 'pSignature->r' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pSignature->r)
+                   ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4916:40: warning: comparison of array 'pSignature->s' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pSignature->s)
+                   ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4944:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4954:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:4983:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5033:37: warning: comparison of array 'pPubKey->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pPubKey->XCoordinate)
+                   ~~~~    ~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5037:37: warning: comparison of array 'pPubKey->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pPubKey->YCoordinate)
+                   ~~~~    ~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5045:35: warning: comparison of array 'pData->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pData->XCoordinate)
+                   ~~~~    ~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5049:35: warning: comparison of array 'pData->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pData->YCoordinate)
+                   ~~~~    ~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5053:35: warning: comparison of array 'pData->HASH' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pData->HASH)
+                   ~~~~    ~~~~~~~^~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5090:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5100:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5129:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5134:76: warning: comparison of array 'pData->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pdata().xcoordinate().size() && NULL != pData->XCoordinate)
+                                                            ~~~~    ~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5139:76: warning: comparison of array 'pData->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pdata().ycoordinate().size() && NULL != pData->YCoordinate)
+                                                            ~~~~    ~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5144:69: warning: comparison of array 'pData->HASH' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pdata().hash().size() && NULL != pData->HASH)
+                                                     ~~~~    ~~~~~~~^~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5210:44: warning: comparison of array 'pECCPubKeyBlob->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pECCPubKeyBlob->XCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5214:44: warning: comparison of array 'pECCPubKeyBlob->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pECCPubKeyBlob->YCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5227:42: warning: comparison of array 'pbCipherText->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pbCipherText->XCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5231:42: warning: comparison of array 'pbCipherText->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pbCipherText->YCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5235:42: warning: comparison of array 'pbCipherText->HASH' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pbCipherText->HASH)
+                   ~~~~    ~~~~~~~~~~~~~~^~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5268:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5278:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5307:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5312:90: warning: comparison of array 'pbCipherText->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pbciphertext().xcoordinate().size() && NULL != pbCipherText->XCoordinate)
+                                                                   ~~~~    ~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5317:90: warning: comparison of array 'pbCipherText->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pbciphertext().ycoordinate().size() && NULL != pbCipherText->YCoordinate)
+                                                                   ~~~~    ~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5322:83: warning: comparison of array 'pbCipherText->HASH' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.pbciphertext().hash().size() && NULL != pbCipherText->HASH)
+                                                            ~~~~    ~~~~~~~~~~~~~~^~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5384:44: warning: comparison of array 'pECCPriKeyBlob->PrivateKey' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pECCPriKeyBlob->PrivateKey)
+                   ~~~~    ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5391:42: warning: comparison of array 'pbCipherText->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pbCipherText->XCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5395:42: warning: comparison of array 'pbCipherText->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pbCipherText->YCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5399:42: warning: comparison of array 'pbCipherText->HASH' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pbCipherText->HASH)
+                   ~~~~    ~~~~~~~~~~~~~~^~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5440:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5450:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5479:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5538:44: warning: comparison of array 'pECCPriKeyBlob->PrivateKey' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pECCPriKeyBlob->PrivateKey)
+                   ~~~~    ~~~~~~~~~~~~~~~~^~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5550:40: warning: comparison of array 'pSignature->r' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pSignature->r)
+                   ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5554:40: warning: comparison of array 'pSignature->s' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pSignature->s)
+                   ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5582:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5592:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5621:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5626:85: warning: comparison of array 'pSignature->r' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.mutable_psignature()->r().size() && NULL != pSignature->r)
+                                                                ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5631:85: warning: comparison of array 'pSignature->s' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(response.mutable_psignature()->s().size() && NULL != pSignature->s)
+                                                                ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5684:44: warning: comparison of array 'pECCPubKeyBlob->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pECCPubKeyBlob->XCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5688:44: warning: comparison of array 'pECCPubKeyBlob->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pECCPubKeyBlob->YCoordinate)
+                   ~~~~    ~~~~~~~~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5700:40: warning: comparison of array 'pSignature->r' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pSignature->r)
+                   ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5704:40: warning: comparison of array 'pSignature->s' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pSignature->s)
+                   ~~~~    ~~~~~~~~~~~~^
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5732:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5742:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5771:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5918:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5928:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:5957:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6041:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6051:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6080:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6157:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6167:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6196:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6271:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6281:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6310:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6398:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6408:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6437:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6530:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6540:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6569:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6653:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6663:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6692:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6773:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6783:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6812:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6897:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6907:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:6936:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7029:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7039:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7068:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7149:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7159:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7188:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7245:37: warning: comparison of array 'pPubKey->XCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pPubKey->XCoordinate)
+                   ~~~~    ~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7249:37: warning: comparison of array 'pPubKey->YCoordinate' not equal to a null pointer is always true [-Wtautological-pointer-compare]
+                if(NULL != pPubKey->YCoordinate)
+                   ~~~~    ~~~~~~~~~^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7283:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7293:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7322:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7408:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7418:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7447:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7525:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7535:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7564:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7637:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7647:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7676:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7809:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7819:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7848:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7930:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7940:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:7969:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:8050:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:8060:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:8089:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:8165:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:8175:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:8204:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:8279:67: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGE(tag,"pRemoteCall->PutRequest, rv = 0x%08lx", rv);
+                                                          ~~~~~   ^~
+                                                          %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:42:68: note: expanded from macro 'LOGE'
+#define LOGE(tag,...)  __android_log_print(ANDROID_LOG_ERROR, tag, __VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:8289:72: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+                LOGI(tag,"pRemoteCall->WaitForResponse, rv = 0x%08lx", rv);
+                                                               ~~~~~   ^~
+                                                               %08x
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:8318:78: warning: format specifies type 'unsigned long' but the argument has type 'int' [-Wformat]
+            LOGI(tag,"parse response msg success %s,ret is %lu",__FUNCTION__,rv);
+                                                           ~~~               ^~
+                                                           %d
+/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp:41:67: note: expanded from macro 'LOGI'
+#define LOGI(tag,...)  __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__)
+                                                                  ^~~~~~~~~~~
+246 warnings generated.
+/home/wjr/CSM/csm/src/main/jni/P11/pkcs11f.cpp:175:25: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                pClient = getInstance("com.westone.csm.CSM");
+                                      ^
+/home/wjr/CSM/csm/src/main/jni/P11/pkcs11f.cpp:11380:27: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                                pClient = getInstance("com.westone.csm.CSM");
+                                                      ^
+/home/wjr/CSM/csm/src/main/jni/P11/pkcs11f.cpp:11476:27: warning: ISO C++11 does not allow conversion from string literal to 'char *' [-Wwritable-strings]
+                                pClient = getInstance("com.westone.csm.CSM");
+                                                      ^
+3 warnings generated.
+[24/24] Linking CXX shared library ../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libClient.so

@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/write_file_name"
+        android:hint="请输入文件名称"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/write_file_name"
+        android:id="@+id/write_file_offset"
+        android:hint="请输入写入的位置偏移量"
+        android:digits="0123456789"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/write_file_offset"
+        android:id="@+id/write_file"
+        android:hint="请输入要写入的信息"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

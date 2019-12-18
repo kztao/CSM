@@ -1,0 +1,12 @@
+# ninja log v5
+1	98	0	CMakeFiles/Test.dir/src/main/jni/sm2.c.o	1c44c969771833d3
+1	129	0	CMakeFiles/Test.dir/src/main/jni/sm3.c.o	e7bbdaf23327d464
+1	151	0	CMakeFiles/Test.dir/src/main/jni/ecp.c.o	f75be48dfb9c59d5
+1	158	0	CMakeFiles/Test.dir/src/main/jni/ecc.c.o	55916e144bf0c7a9
+1	188	0	CMakeFiles/Test.dir/src/main/jni/bn.c.o	7a4d2823f49e4133
+1	202	0	CMakeFiles/Test.dir/src/main/jni/sm4ofb.c.o	132d0cc94640e03c
+1	652	0	CMakeFiles/Test.dir/src/main/jni/native.cpp.o	59d2c0bbcf5162ba
+1	695	0	CMakeFiles/Test.dir/src/main/jni/P11TestFuncList.cpp.o	21d38f63cb4e9dfb
+1	1306	0	CMakeFiles/Test.dir/src/main/jni/Encrypt.cpp.o	93341601b42d7eda
+1306	1324	0	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libTest.so	f025d94a77e957ba
+1	31	0	../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libTest.so	f025d94a77e957ba

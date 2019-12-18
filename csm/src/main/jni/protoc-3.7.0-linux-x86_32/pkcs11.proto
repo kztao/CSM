@@ -1,0 +1,1154 @@
+syntax = "proto2";
+
+package com.weston.pkcs11;
+
+message PRO_Version{
+	required uint32 major = 1;	
+	required uint32 minor = 2;	
+}
+
+message PRO_Attribute{
+	required uint32 type = 1;
+	optional bytes 	value = 2;
+	required uint32 ulValueLen = 3;
+}
+
+message PRO_Mechanism{
+	required uint32 mechanism = 1;
+	optional bytes pParameter = 2;
+	required uint32 ulValueLen = 3;
+}
+
+message PRO_CK_INFO{
+	required PRO_Version cryptokiVersion = 1;
+	required bytes manufacturerID = 2;
+	required uint32 flags = 3;
+	required bytes libraryDescription = 4;
+	required PRO_Version libraryVersion = 5;
+}
+
+message PRO_CK_SLOT_INFO{
+	required bytes slotDescription = 1;
+	required bytes manufacturerID = 2;
+	required uint32 flags = 3;
+	required PRO_Version hardwareVersion = 4;
+	required PRO_Version firmwareVersion = 5;
+}
+
+message PRO_TokenInfo{
+	required bytes labe = 1;
+	required bytes manufacturerID = 2;
+	required bytes model = 3;
+	required bytes serialNumber = 4;
+	required uint32 flags = 5;
+	required uint32 ulMaxSessionCount = 6;
+	required uint32 ulSessionCount = 7; 
+	required uint32 ulMaxRwSessionCount = 8;
+	required uint32 ulRwSessionCount = 9;
+	required uint32 ulMaxPinLen = 10;
+	required uint32 ulMinPinLen = 11;
+	required uint32 ulTotalPublicMemory = 12;
+	required uint32 ulFreePublicMemory = 13;
+	required uint32 ulTotalPrivateMemory = 14;
+	required uint32 ulFreePrivateMemory = 15;
+	required PRO_Version hardwareVersion = 16;
+	required PRO_Version firmwareVersion = 17;
+	required bytes utcTime = 18;
+}
+
+message PRO_MechanismInfo{
+	required uint32 ulMinKeySize = 1;
+	required uint32 ulMaxKeySize = 2;
+	required uint32 flags = 3;
+}
+
+message PRO_SessionInfo{
+	required uint32 slotID = 1;
+	required uint32 state = 2;
+	required uint32 flags = 3;
+	required uint32 ulDeviceError = 4;
+}
+
+message PRO_ipparam{
+	required bytes ip = 1;
+	required uint32 oWayPort = 2;
+	required uint32 tWayPort = 3;
+}
+
+/**********************C_Initialize************************/
+message Req_C_Initialize{
+
+}
+message Rsp_C_Initialize{
+
+}
+
+/**********************C_Finalize************************/
+message Req_C_Finalize{
+
+}
+message Rsp_C_Finalize{
+
+}
+
+/**********************C_GetInfo************************/
+message Req_C_GetInfo{
+	optional PRO_CK_INFO pInfo = 1;
+}
+message Rsp_C_GetInfo{
+	optional PRO_CK_INFO pInfo = 1;
+}
+
+/**********************C_GetFunctionList************************/
+message Req_C_GetFunctionList{
+
+}
+message Rsp_C_GetFunctionList{
+
+}
+/**********************C_GetSlotList************************/
+message Req_C_GetSlotList{
+	required uint32 tokenPrespent = 1;
+	repeated uint32 pSlotList = 2; 
+	optional uint32 pulCount = 3; 
+}
+message Rsp_C_GetSlotList{
+	repeated uint32 pSlotList = 1;
+	optional uint32 pulCount = 2;
+}
+
+/**********************C_GetSlotInfo************************/
+message Req_C_GetSlotInfo{
+	required uint32 slotID = 1;
+	optional PRO_CK_SLOT_INFO pInfo = 2;
+}
+message Rsp_C_GetSlotInfo{
+	optional PRO_CK_SLOT_INFO pInfo = 1;
+}
+
+/**********************C_GetTokenInfo************************/
+message Req_C_GetTokenInfo{
+	required uint32 slotID = 1;
+	optional PRO_TokenInfo pInfo = 2;
+}
+message Rsp_C_GetTokenInfo{
+	optional PRO_TokenInfo pInfo = 1;
+}
+
+/**********************C_GetMechanismList************************/
+message Req_C_GetMechanismList{
+	required uint32 slotID = 1;
+	repeated uint32 pMechanismList = 2; 
+	optional uint32 pulCount = 3; 
+}
+message Rsp_C_GetMechanismList{
+	repeated uint32 pMechanismList = 1;
+	optional uint32 pulCount = 2;
+}
+
+/**********************C_GetMechanismInfo************************/
+message Req_C_GetMechanismInfo{
+	required uint32 slotID = 1;
+	required uint32 type = 2;
+	optional PRO_MechanismInfo pInfo = 3;
+}
+message Rsp_C_GetMechanismInfo{
+	optional PRO_MechanismInfo pInfo = 1;
+}
+
+/**********************C_InitToken************************/
+message Req_C_InitToken{
+	required uint32 slotID = 1;
+	optional bytes pPin = 2;
+	required uint32 ulPinLen = 3;
+	optional bytes pLabel = 4;
+}
+message Rsp_C_InitToken{
+
+}
+
+/**********************C_InitPIN************************/
+message Req_C_InitPIN{
+	required uint32 hSession = 1;
+	optional bytes pPin = 2;
+	required uint32 ulPinLen = 3;
+}
+message Rsp_C_InitPIN{
+
+}
+
+/**********************C_SetPIN************************/
+message Req_C_SetPIN{
+	required uint32 hSession = 1;
+	optional bytes pOldPin = 2;
+	required uint32 ulOldLen = 3;
+	optional bytes pNewPin = 4;
+	required uint32 ulNewLen = 5;
+}
+message Rsp_C_SetPIN{
+
+}
+
+/**********************C_OpenSession************************/
+message Req_C_OpenSession{
+	required uint32 slotID = 1;
+	required uint32 flags = 2;
+	optional uint32 phSession = 3;
+}
+message Rsp_C_OpenSession{
+	optional uint32 phSession = 1;
+}
+
+/**********************C_CloseSession************************/
+message Req_C_CloseSession{
+	required uint32 hSession = 1;
+}
+message Rsp_C_CloseSession{
+
+}
+
+/**********************C_CloseAllSessions************************/
+message Req_C_CloseAllSessions{
+	required uint32 slotID = 1;
+}
+message Rsp_C_CloseAllSessions{
+
+}
+
+/**********************C_GetSessionInfo************************/
+message Req_C_GetSessionInfo{
+	required uint32 hSession = 1;
+	optional PRO_SessionInfo pInfo = 2;
+}
+message Rsp_C_GetSessionInfo{
+	optional PRO_SessionInfo pInfo = 1;
+}
+
+/**********************C_GetOperationState************************/
+message Req_C_GetOperationState{
+	required uint32 hSession = 1;
+	optional bytes pOperationState = 2; 
+	optional uint32 pulOperationStateLen = 3; 
+}
+message Rsp_C_GetOperationState{
+	optional bytes pOperationState = 1;
+	optional uint32 pulOperationStateLen = 2;
+}
+
+/**********************C_SetOperationState************************/
+message Req_C_SetOperationState{
+	required uint32 hSession = 1;
+	optional bytes pOperationState = 2;
+	required uint32 ulOperationStateLen = 3;
+	required uint32 hEncryptionKey = 4;
+	required uint32 hAuthenticationKey = 5;
+}
+message Rsp_C_SetOperationState{
+
+}
+
+/**********************C_Login************************/
+message Req_C_Login{
+	required uint32 hSession = 1;
+	required uint32 userType = 2;
+	optional bytes pPin = 3;
+	required uint32 ulPinLen = 4;
+}
+message Rsp_C_Login{
+
+}
+
+/**********************C_Logout************************/
+message Req_C_Logout{
+	required uint32 hSession = 1;
+}
+message Rsp_C_Logout{
+
+}
+
+/**********************C_CreateObject************************/
+message Req_C_CreateObject{
+	required uint32 hSession = 1;
+	repeated PRO_Attribute pTemplate = 2;
+	required uint32 ulCount = 3;
+	optional uint32 phObject = 4;
+}
+message Rsp_C_CreateObject{
+	optional uint32 phObject = 1;
+}
+
+/**********************C_CopyObject************************/
+message Req_C_CopyObject{
+	required uint32 hSession = 1;
+	required uint32 hObject = 2;
+	repeated PRO_Attribute pTemplate = 3;
+	required uint32 ulCount = 4;
+	optional uint32 phNewObject = 5;
+}
+message Rsp_C_CopyObject{
+	optional uint32 phNewObject = 1;
+}
+
+/**********************C_DestroyObject************************/
+message Req_C_DestroyObject{
+	required uint32 hSession = 1;
+	required uint32 hObject = 2;	
+}
+message Rsp_C_DestroyObject{
+
+}
+
+/**********************C_GetObjectSize************************/
+message Req_C_GetObjectSize{
+	required uint32 hSession = 1;
+	required uint32 hObject = 2;
+	optional uint32 pulSize = 3;
+}
+message Rsp_C_GetObjectSize{
+	optional uint32 pulSize = 1;
+}
+
+/**********************C_GetAttributeValue************************/
+message Req_C_GetAttributeValue{
+	required uint32 hSession = 1;
+	required uint32 hObject = 2;
+	repeated PRO_Attribute pTemplate = 3;
+	required uint32 ulCount = 4;
+}
+message Rsp_C_GetAttributeValue{
+	repeated PRO_Attribute pTemplate = 1;
+}
+
+/**********************C_SetAttributeValue************************/
+message Req_C_SetAttributeValue{
+	required uint32 hSession = 1;
+	required uint32 hObject = 2;	
+	repeated PRO_Attribute pTemplate = 3;
+	required uint32 ulCount = 4;
+}
+message Rsp_C_SetAttributeValue{
+
+}
+
+/**********************C_FindObjectsInit************************/
+message Req_C_FindObjectsInit{
+	required uint32 hSession = 1;
+	repeated PRO_Attribute pTemplate = 2;
+	required uint32 ulCount = 3;
+}
+message Rsp_C_FindObjectsInit{
+
+}
+
+/**********************C_FindObjects************************/
+message Req_C_FindObjects{
+	required uint32 hSession = 1;
+	repeated uint32 phObject = 2;
+	required uint32 ulMaxObjectCount = 3;
+	optional uint32 pulObjectCount = 4;
+}
+message Rsp_C_FindObjects{
+	repeated uint32 phObject = 1;
+	optional uint32 pulObjectCount = 2;
+
+}
+
+/**********************C_FindObjectsFinal************************/
+message Req_C_FindObjectsFinal{
+	required uint32 hSession = 1;
+}
+message Rsp_C_FindObjectsFinal{
+
+}
+
+/**********************C_EncryptInit************************/
+message Req_C_EncryptInit{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hKey = 3;
+}
+message Rsp_C_EncryptInit{
+
+}
+
+/**********************C_Encrypt************************/
+message Req_C_Encrypt{
+	required uint32 hSession = 1;
+	optional bytes pData = 2;
+	required uint32 ulDataLen = 3;
+	optional bytes pEncryptedData = 4;
+	optional uint32 pulEncryptedDataLen = 5;
+}
+message Rsp_C_Encrypt{
+	optional bytes pEncryptedData = 1;
+	optional uint32 pulEncryptedDataLen = 2;
+}
+
+/**********************C_EncryptUpdate************************/
+message Req_C_EncryptUpdate{
+	required uint32 hSession = 1;
+	optional bytes pPart = 2;
+	required uint32 ulPartLen = 3;
+	optional bytes pEncryptedPart = 4;
+	optional uint32 pulEncryptedPartLen = 5;
+}
+message Rsp_C_EncryptUpdate{
+	optional bytes pEncryptedPart = 1;
+	optional uint32 pulEncryptedPartLen = 2;
+}
+
+/**********************C_EncryptFinal************************/
+message Req_C_EncryptFinal{
+	required uint32 hSession = 1;
+	optional bytes pLastEncryptedPart = 2;
+	optional uint32 pulLastEncryptedPartLen = 3;
+}
+message Rsp_C_EncryptFinal{
+	optional bytes pLastEncryptedPart = 1;
+	optional uint32 pulLastEncryptedPartLen = 2;
+}
+
+/**********************C_DecryptInit************************/
+message Req_C_DecryptInit{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hKey = 3;
+}
+message Rsp_C_DecryptInit{
+
+}
+
+/**********************C_Decrypt************************/
+message Req_C_Decrypt{
+	required uint32 hSession = 1;
+	optional bytes pEncryptedData = 2;
+	required uint32 ulEncryptedDataLen = 3;
+	optional bytes pData = 4;
+	optional uint32 pulDataLen = 5;
+}
+message Rsp_C_Decrypt{
+	optional bytes pData = 1;
+	optional uint32 pulDataLen = 2;
+}
+
+/**********************C_DecryptUpdate************************/
+message Req_C_DecryptUpdate{
+	required uint32 hSession = 1;
+	optional bytes pEncryptedPart = 2;
+	required uint32 ulEncryptedPartLen = 3;
+	optional bytes pPart = 4;
+	optional uint32 pulPartLen = 5;
+}
+message Rsp_C_DecryptUpdate{
+	optional bytes pPart = 1;
+	optional uint32 pulPartLen = 2;
+}
+
+/**********************C_DecryptFinal************************/
+message Req_C_DecryptFinal{
+	required uint32 hSession = 1;
+	optional bytes pLastPart = 2;
+	optional uint32 pulLastPartLen = 3;
+}
+message Rsp_C_DecryptFinal{
+	optional bytes pLastPart = 1;
+	optional uint32 pulLastPartLen = 2;
+}
+
+/**********************C_DigestInit************************/
+message Req_C_DigestInit{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+}
+message Rsp_C_DigestInit{
+
+}
+
+/**********************C_Digest************************/
+message Req_C_Digest{
+	required uint32 hSession = 1;
+	optional bytes pData = 2;
+	required uint32 ulDataLen = 3;
+	optional bytes pDigest = 4;
+	optional uint32 pulDigestLen = 5;
+}
+message Rsp_C_Digest{
+	optional bytes pDigest = 1;
+	optional uint32 pulDigestLen = 2;
+}
+
+/**********************C_DigestUpdate************************/
+message Req_C_DigestUpdate{
+	required uint32 hSession = 1;
+	optional bytes pPart = 2;
+	required uint32 ulPartLen = 3;
+}
+message Rsp_C_DigestUpdate{
+
+}
+
+/**********************C_DigestKey************************/
+message Req_C_DigestKey{
+	required uint32 hSession = 1;
+	required uint32 hKey = 2;	
+}
+message Rsp_C_DigestKey{
+
+}
+
+/**********************C_DigestKey************************/
+message Req_C_DigestFinal{
+	required uint32 hSession = 1;
+	optional bytes pDigest = 2;
+	optional uint32 pulDigestLen = 3;
+}
+message Rsp_C_DigestFinal{
+	optional bytes pDigest = 1;
+	optional uint32 pulDigestLen = 2;
+}
+
+/**********************C_DigestKey************************/
+message Req_C_SignInit{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hKey = 3;
+}
+message Rsp_C_SignInit{
+
+}
+
+/**********************C_Sign************************/
+message Req_C_Sign{
+	required uint32 hSession = 1;
+	optional bytes pData = 2;
+	required uint32 ulDataLen = 3;
+	optional bytes pSignature = 4;
+	optional uint32 pulSignatureLen = 5;
+}
+message Rsp_C_Sign{
+	optional bytes pSignature = 1;
+	optional uint32 pulSignatureLen = 2;
+}
+
+/**********************C_SignUpdate************************/
+message Req_C_SignUpdate{
+	required uint32 hSession = 1;
+	optional bytes pPart = 2;
+	required uint32 ulPartLen = 3;
+}
+message Rsp_C_SignUpdate{
+
+}
+
+/**********************C_SignFinal************************/
+message Req_C_SignFinal{
+	required uint32 hSession = 1;
+	optional bytes pSignature = 2;
+	optional uint32 pulSignatureLen = 3;
+}
+message Rsp_C_SignFinal{
+	optional bytes pSignature = 1;
+	optional uint32 pulSignatureLen = 2;
+}
+
+/**********************C_SignRecoverInit************************/
+message Req_C_SignRecoverInit{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hKey = 3;
+}
+message Rsp_C_SignRecoverInit{
+
+}
+
+/**********************C_SignRecoverInit************************/
+message Req_C_SignRecover{
+	required uint32 hSession = 1;
+	optional bytes pData = 2;
+	required uint32 ulDataLen = 3;
+	optional bytes pSignature = 4;
+	optional uint32 pulSignatureLen = 5;
+}
+message Rsp_C_SignRecover{
+	optional bytes pSignature = 1;
+	optional uint32 pulSignatureLen = 2;
+}
+
+/**********************C_VerifyInit************************/
+message Req_C_VerifyInit{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hKey = 3;
+}
+message Rsp_C_VerifyInit{
+
+}
+
+/**********************C_Verify************************/
+message Req_C_Verify{
+	required uint32 hSession = 1;
+	optional bytes pData = 2;
+	required uint32 ulDataLen = 3;
+	optional bytes pSignature = 4;
+	required uint32 ulSignatureLen = 5;
+}
+message Rsp_C_Verify{
+
+}
+
+/**********************C_Verify************************/
+message Req_C_VerifyUpdate{
+	required uint32 hSession = 1;
+	optional bytes pPart = 2;
+	required uint32 ulPartLen = 3;
+}
+message Rsp_C_VerifyUpdate{
+
+}
+
+/**********************C_VerifyFinal************************/
+message Req_C_VerifyFinal{
+	required uint32 hSession = 1;
+	optional bytes pSignature = 2;
+	required uint32 ulSignatureLen = 3;
+}
+message Rsp_C_VerifyFinal{
+
+}
+
+/**********************C_VerifyRecoverInit************************/
+message Req_C_VerifyRecoverInit{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hKey = 3;
+}
+message Rsp_C_VerifyRecoverInit{
+
+}
+
+/**********************C_VerifyRecover************************/
+message Req_C_VerifyRecover{
+	required uint32 hSession = 1;
+	optional bytes pSignature = 2;
+	required uint32 ulSignatureLen = 3;
+	optional bytes pData = 4;
+	optional uint32 pulDataLen = 5;
+}
+message Rsp_C_VerifyRecover{
+	optional bytes pData = 1;
+	optional uint32 pulDataLen = 2;
+}
+
+/**********************C_DigestEncryptUpdate************************/
+message Req_C_DigestEncryptUpdate{
+	required uint32 hSession = 1;
+	optional bytes pPart = 2;
+	required uint32 ulPartLen = 3;
+	optional bytes pEncryptedPart = 4;
+	optional uint32 pulEncryptedPartLen = 5;
+}
+message Rsp_C_DigestEncryptUpdate{
+	optional bytes pEncryptedPart = 1;
+	optional uint32 pulEncryptedPartLen = 2;
+}
+
+/**********************C_DecryptDigestUpdate************************/
+message Req_C_DecryptDigestUpdate{
+	required uint32 hSession = 1;
+	optional bytes pEncryptedPart = 2;
+	required uint32 ulEncryptedPartLen = 3;
+	optional bytes pPart = 4;
+	optional uint32 pulPartLen = 5;
+}
+message Rsp_C_DecryptDigestUpdate{
+	optional bytes pPart = 1;
+	optional uint32 pulPartLen = 2;
+}
+
+/**********************C_SignEncryptUpdate************************/
+message Req_C_SignEncryptUpdate{
+	required uint32 hSession = 1;
+	optional bytes pPart = 2;
+	required uint32 ulPartLen = 3;
+	optional bytes pEncryptedPart = 4;
+	optional uint32 pulEncryptedPartLen = 5;
+}
+message Rsp_C_SignEncryptUpdate{
+	optional bytes pEncryptedPart = 1;
+	optional uint32 pulEncryptedPartLen = 2;
+}
+
+/**********************C_DecryptVerifyUpdate************************/
+message Req_C_DecryptVerifyUpdate{
+	required uint32 hSession = 1;
+	optional bytes pEncryptedPart = 2;
+	required uint32 ulEncryptedPartLen = 3;
+	optional bytes pPart = 4;
+	optional uint32 pulPartLen = 5;
+}
+message Rsp_C_DecryptVerifyUpdate{
+	optional bytes pPart = 1;
+	optional uint32 pulPartLen = 2;
+}
+
+/**********************C_GenerateKey************************/
+message Req_C_GenerateKey{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	repeated PRO_Attribute pTemplate = 3;
+	required uint32 ulCount = 4;
+	optional uint32 phKey = 5;
+}
+message Rsp_C_GenerateKey{
+	optional uint32 phKey = 1;
+}
+
+/**********************C_GenerateKeyPair************************/
+message Req_C_GenerateKeyPair{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	repeated PRO_Attribute pPublicKeyTemplate = 3;
+	required uint32 ulPublicKeyAttributeCount = 4;
+	repeated PRO_Attribute pPrivateKeyTemplate = 5;
+	required uint32 ulPrivateKeyAttributeCount = 6;
+	optional uint32 phPublicKey = 7;
+	optional uint32 phPrivateKey = 8;
+}
+message Rsp_C_GenerateKeyPair{
+	optional uint32 phPublicKey = 1;
+	optional uint32 phPrivateKey = 2;
+}
+
+/**********************C_WrapKey************************/
+message Req_C_WrapKey{
+	required uint32 hSession = 1;	
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hWrappingKey = 3;
+	required uint32 hKey = 4;
+	optional bytes pWrappedKey = 5;
+	optional uint32 pulWrappedKeyLen = 6;
+}
+message Rsp_C_WrapKey{
+	optional bytes pWrappedKey = 1;
+	optional uint32 pulWrappedKeyLen = 2;
+}
+
+/**********************C_UnwrapKey************************/
+message Req_C_UnwrapKey{
+	required uint32 hSession = 1;	
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hUnwrappingKey = 3;
+	optional bytes pWrappedKey = 4;
+	required uint32 ulWrappedKeyLen = 5;
+	repeated PRO_Attribute pTemplate = 6;
+	required uint32 ulAttributeCount = 7;
+	optional uint32 phKey = 8; 
+}
+message Rsp_C_UnwrapKey{
+	optional uint32 phKey = 1;
+}
+
+/**********************C_DeriveKey************************/
+message Req_C_DeriveKey{
+	required uint32 hSession = 1;	
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hBaseKey = 3;
+	repeated PRO_Attribute pTemplate = 4;
+	required uint32 ulAttributeCount = 5;
+	optional uint32 phKey = 6;
+}
+message Rsp_C_DeriveKey{
+	optional uint32 phKey = 1;
+}
+
+/**********************C_SeedRandom************************/
+message Req_C_SeedRandom{
+	required uint32 hSession = 1;	
+	optional bytes pSeed = 2;
+	required uint32 ulSeedLen = 3;
+}
+message Rsp_C_SeedRandom{
+
+}
+
+/**********************C_GenerateRandom************************/
+message Req_C_GenerateRandom{
+	required uint32 hSession = 1;	
+	optional bytes RandomData = 2;
+	required uint32 ulRandomLen = 3;
+}
+message Rsp_C_GenerateRandom{
+	optional bytes RandomData = 1;
+}
+
+/**********************C_GetFunctionStatus************************/
+message Req_C_GetFunctionStatus{
+	required uint32 hSession = 1;	
+}
+message Rsp_C_GetFunctionStatus{
+
+}
+
+/**********************C_CancelFunction************************/
+message Req_C_CancelFunction{
+	required uint32 hSession = 1;	
+}
+message Rsp_C_CancelFunction{
+
+}
+
+/**********************C_WaitForSlotEvent************************/
+message Req_C_WaitForSlotEvent{
+	required uint32 flags = 1;
+	optional uint32 pSlot = 2;
+	optional bytes pRserved = 3;
+}
+message Rsp_C_WaitForSlotEvent{
+	optional uint32 pSlot = 1;
+	optional bytes pRserved = 2;
+}
+
+/**********************C_Extend_GetPinRemainCount************************/
+message Req_C_Extend_GetPinRemainCount{
+	required uint32 hSession = 1;	
+	optional uint32 pUiRemainCount = 2;
+}
+message Rsp_C_Extend_GetPinRemainCount{
+	optional uint32 pUiRemainCount = 1;
+}
+
+/**********************C_Extend_GetStatus************************/
+message Req_C_Extend_GetStatus{
+	required uint32 slotID = 1;	
+	optional uint32 pStatus = 2;
+}
+message Rsp_C_Extend_GetStatus{
+	optional uint32 pStatus = 1;
+}
+
+/**********************C_Extend_Register_Status_Callback_Func************************/
+message Rsp_Status_Callback_Func{
+	required uint32 slotID = 1;
+	required uint32 status = 2;
+}
+
+/**********************C_Extend_Register_Callback************************/
+message Req_C_Extend_Register_Callback{
+
+}
+message Rsp_C_Extend_Register_Callback{
+
+}
+
+/**********************C_Extend_Unregister_Callback************************/
+message Req_C_Extend_Unregister_Callback{
+
+}
+message Rsp_C_Extend_Unregister_Callback{
+
+}
+
+/**********************C_Extend_GetExchangeSessionKey************************/
+message Req_C_Extend_GetExchangeSessionKey{
+	required uint32 hSession = 1;
+	required uint32 hKey = 2;
+	optional bytes pEncryptedData = 3;
+	optional uint32 pulEncryptedDataLen = 4;
+}
+message Rsp_C_Extend_GetExchangeSessionKey{
+	optional bytes pEncryptedData = 2;
+	optional uint32 pulEncryptedDataLen = 3;
+}
+
+/**********************C_Extend_Destroy************************/
+message Req_C_Extend_Destroy{
+	required uint32 slotID = 1;
+	optional bytes containerName = 2;
+}
+message Rsp_C_Extend_Destroy{
+
+}
+
+/**********************C_Extend_Reset_Pin_With_OTP************************/
+message Req_C_Extend_Reset_Pin_With_OTP{
+	required uint32 hSession = 1;
+	optional bytes pbOTPPIN = 2;
+	required uint32 ulOTPPINLen = 3;
+	optional bytes pbNewUserPIN = 4;
+	required uint32 ulNewUserPINLen = 5;
+}
+message Rsp_C_Extend_Reset_Pin_With_OTP{
+
+}
+
+/**********************C_Extend_Reset_OTP************************/
+message Req_C_Extend_Reset_OTP{
+	required uint32 hSession = 1;
+	optional bytes pbOTPMpk = 2;
+	required uint32 ulMpkLen = 3;
+	optional bytes pbMpkIV = 4;
+	required uint32 ulMpkIVLen = 5;
+}
+message Rsp_C_Extend_Reset_OTP{
+
+}
+
+/**********************C_Extend_Get_OTP_Unlock_Count************************/
+message Req_C_Extend_Get_OTP_Unlock_Count{
+	required uint32 hSession = 1;
+	optional uint32 pulCount = 2;
+}
+message Rsp_C_Extend_Get_OTP_Unlock_Count{
+	optional uint32 pulCount = 1;
+}
+
+/**********************C_Extend_Get_OTP_Remain_Count************************/
+message Req_C_Extend_Get_OTP_Remain_Count{
+	required uint32 hSession = 1;
+	optional uint32 pulCount = 2;
+}
+message Rsp_C_Extend_Get_OTP_Remain_Count{
+	optional uint32 pulCount = 1;
+}
+
+/**********************C_Extend_DeriveSessionKey************************/
+message Req_C_Extend_DeriveSessionKey{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	required uint32 hLocalKey = 3;
+	required uint32 hRemoteKey = 4;
+	repeated PRO_Attribute pTemplate = 5;	
+	required uint32 ulAttributeCount = 6;
+	optional uint32 phKey = 7;
+	optional bytes pExchangeIV = 8;
+	optional uint32 pExchangeIVLen = 9;
+}
+message Rsp_C_Extend_DeriveSessionKey{
+	optional uint32 phKey = 1;
+	optional bytes pExchangeIV = 2;
+	optional uint32 pExchangeIVLen = 3;
+}
+
+/**********************C_Extend_EncryptInit************************/
+message Req_C_Extend_EncryptInit{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	repeated PRO_Attribute pTemplate = 3;
+	required uint32 ulAttributeCount = 4;
+}
+message Rsp_C_Extend_EncryptInit{
+
+}
+
+/**********************C_Extend_DecryptInit************************/
+message Req_C_Extend_DecryptInit{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;
+	repeated PRO_Attribute pTemplate = 3;
+	required uint32 ulAttributeCount = 4;
+}
+message Rsp_C_Extend_DecryptInit{
+
+}
+
+/**********************C_Extend_EncryptUpdate************************/
+message Req_C_Extend_EncryptUpdate{
+	required uint32 hSession = 1;
+	optional bytes pIv = 2;
+	required uint32 ulIvLen = 3;
+	optional bytes pPart = 4; 
+	required uint32 ulPartLen = 5;
+	optional bytes pEncryptedPart = 6; 
+	optional uint32 pulEncryptedPartLen = 7;
+}
+message Rsp_C_Extend_EncryptUpdate{
+	optional bytes pEncryptedPart = 6;
+	optional uint32 pulEncryptedPartLen = 7;
+}
+
+/**********************C_Extend_DecryptUpdate************************/
+message Req_C_Extend_DecryptUpdate{
+	required uint32 hSession = 1;
+	optional bytes pIv = 2;
+	required uint32 ulIvLen = 3;
+	optional bytes pEncryptedPart = 4; 
+	required uint32 ulEncryptedPartLen = 5;
+	optional bytes pPart = 6; 
+	optional uint32 pulPartLen = 7;
+}
+message Rsp_C_Extend_DecryptUpdate{
+	optional bytes pPart = 6;
+	optional uint32 pulPartLen = 7;
+}
+
+/**********************C_Extend_EncryptFinalize************************/
+message Req_C_Extend_EncryptFinalize{
+	required uint32 hSession = 1;
+	optional bytes pLastEncryptedPart = 6; 
+	optional uint32 pulLastEncryptedPartLen = 7;
+}
+message Rsp_C_Extend_EncryptFinalize{
+	optional bytes pLastEncryptedPart = 6;
+	optional uint32 pulLastEncryptedPartLen = 7;
+}
+
+/**********************C_Extend_DecryptFinalize************************/
+message Req_C_Extend_DecryptFinalize{
+	required uint32 hSession = 1;
+	optional bytes pLastPart = 6; 
+	optional uint32 pulLastPartLen = 7;
+}
+message Rsp_C_Extend_DecryptFinalize{
+	optional bytes pLastPart = 6;
+	optional uint32 pulLastPartLen = 7;
+}
+
+/**********************C_Extend_PointMultiply************************/
+message Req_C_Extend_PointMultiply{
+	required uint32 hSession = 1;
+	optional PRO_Mechanism pMechanism = 2;	
+	required uint32 hKey = 3;
+	optional bytes pOutData = 4; 
+	optional uint32 pulCount = 5; 
+}
+message Rsp_C_Extend_PointMultiply{
+	optional bytes pOutData = 4;
+	optional uint32 pulCount = 5;
+}
+
+/**********************C_Extend_Reset_TT************************/
+message Req_C_Extend_Reset_TT{
+	required uint32 hSession = 1;
+	optional bytes pbTTMpk = 2;
+	required uint32 ulMpkLen = 3;
+	optional bytes pbMpkIV = 4;
+	required uint32 ulMpkIVLen = 5;
+}
+message Rsp_C_Extend_Reset_TT{
+
+}
+/**********************C_Extend_Reset_BK************************/
+message Req_C_Extend_Reset_BK{
+	required uint32 hSession = 1;
+	optional bytes pbBKMpk = 2;
+	required uint32 ulMpkLen = 3;
+	optional bytes pbMpkIV = 4;
+	required uint32 ulMpkIVLen = 5;
+}
+message Rsp_C_Extend_Reset_BK{
+
+}
+
+/**********************C_Extend_Get_Special_Object_Version************************/
+message Req_C_Extend_Get_Special_Object_Version{
+    required uint32 hSession = 1;
+    required uint32 objectClass = 2;
+    optional bytes pVersion = 3;
+    optional uint32 pUlLen = 4;
+}
+message Rsp_C_Extend_Get_Special_Object_Version{
+	optional bytes pVersion = 1;
+    optional uint32 pUlLen = 2;
+}
+
+/**********************C_Extend_DestroyCard************************/
+message Req_C_Extend_DestroyCard{
+	required uint32 slotID = 1;
+	required bytes prandomIn = 2;
+	required uint32 randomInLen = 3;
+	optional bytes prandomOut = 4;
+	optional uint32 prandomOutLen = 5;
+}
+message Rsp_C_Extend_DestroyCard{
+    optional bytes prandomOut = 1;
+    optional uint32 prandomOutLen = 2;
+}
+
+/**********************C_Extend_MonopolizeEnable************************/
+message Req_C_Extend_MonopolizeEnable{
+	required uint32 slotID = 1;
+}
+message Rsp_C_Extend_MonopolizeEnable{
+
+}
+
+/**********************C_Extend_MonopolizeDisable************************/
+message Req_C_Extend_MonopolizeDisable{
+	required uint32 slotID = 1;
+}
+message Rsp_C_Extend_MonopolizeDisable{
+
+}
+
+/**********************C_Extend_GetDevInfo************************/
+message Req_C_Extend_GetDevInfo{
+	required uint32 slotID = 1;
+	optional string userName = 2;
+	optional PRO_ipparam ipparam = 3;
+	optional bytes pDevInfo = 4;
+	optional uint32 pUlDevInfoLen = 5;
+}
+message Rsp_C_Extend_GetDevInfo{
+	optional bytes pDevInfo = 1;
+	optional uint32 pUlDevInfoLen = 2;
+}
+/**********************C_Extend_DevSign************************/
+message Req_C_Extend_DevSign{
+	required uint32 slotID = 1;
+	required bytes pData = 2;
+	required uint32 ulDataLen = 3;
+	optional bytes pSignature = 4;
+	optional uint32 pulSignatureLen = 5;
+}
+message Rsp_C_Extend_DevSign{
+    optional bytes pSignature = 1;
+    optional uint32 pulSignatureLen = 2;
+}
+
+/**********************C_Extend_Set_DestroyKey************************/
+message Req_C_Extend_Set_DestroyKey{
+	required uint32 hSession = 1;
+	optional bytes pDestroyKeyMpk = 2;
+	required uint32 ulMpkLen = 3;
+	optional bytes pbMpkIV = 4;
+	required uint32 ulMpkIVLen = 5;
+}
+message Rsp_C_Extend_Set_DestroyKey{
+
+}
+
+/**********************C_Extend_Get_ExchangePubKey************************/
+message Req_C_Extend_Get_ExchangePubKey
+{
+	required uint32 hSession = 1;
+	optional bytes pExchangePubKeyValue = 2;
+	required uint32 pulKeyLen = 3;
+}
+message Rsp_C_Extend_Get_ExchangePubKey{
+    optional bytes pExchangePubKeyValue = 1;
+    optional uint32 pulKeyLen = 2;
+}
+
+/**********************softCreateCipherCard************************/
+message Req_softCreateCipherCard
+{
+    required string token = 1;
+    required string userName = 2;
+    required string licSesrverAddr = 3;
+    required string csppAddr = 4;
+}
+message Rsp_softCreateCipherCard
+{
+
+}
+
+
+/**********************DestroyCipherCard************************/
+message Req_DestroyCipherCard
+{
+
+}
+message Rsp_DestroyCipherCard
+{
+
+}

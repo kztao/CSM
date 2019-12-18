@@ -1,0 +1,221 @@
+
+{
+	"buildFiles" : [ "/home/wjr/CSM/CSM/cardmanager/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target clean"
+	],
+	"cppFileExtensions" : [ "cc", "cpp" ],
+	"libraries" : 
+	{
+		"Client-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "Client",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target Client",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DClient_EXPORTS -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog/Appenders -I../../../../../csm/src/main/jni/plog/Converters -I../../../../../csm/src/main/jni/plog/Formatters -I../../../../../csm/src/main/jni/plog -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/P11  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/P11/pkcs11.pb.cc",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DClient_EXPORTS -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog/Appenders -I../../../../../csm/src/main/jni/plog/Converters -I../../../../../csm/src/main/jni/plog/Formatters -I../../../../../csm/src/main/jni/plog -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/P11  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/P11/pkcs11f.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DClient_EXPORTS -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog/Appenders -I../../../../../csm/src/main/jni/plog/Converters -I../../../../../csm/src/main/jni/plog/Formatters -I../../../../../csm/src/main/jni/plog -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/P11  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/P11/log.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/debug/obj/arm64-v8a/libClient.so",
+			"toolchain" : "330248480682546533"
+		},
+		"RemoteCallClient-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "RemoteCallClient",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target RemoteCallClient",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/RemoteCall/Mutex.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/scp02/Scp02Client.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/Communication/LocalSocketClient.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/Communication/BinderClient.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/RemoteCall/ContentFrame.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/RemoteCall/ContentFrame0001.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/RemoteCall/RemoteCall.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/RemoteCall/Return.pb.cc",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/RemoteCall/Pack.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/RemoteCall/GetPackageName.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot   -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/RemoteCall/MsgFrame.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/scp02/tiny_des.c",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/scp02/tiny_sha2.c",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/scp02/sm3.c",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security  -O0 -fno-limit-debug-info  -fPIC      -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/scp02/sm4.c",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a/libRemoteCallClient.a",
+			"toolchain" : "330248480682546533"
+		},
+		"SkfClient-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "SkfClient",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target SkfClient",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DSkfClient_EXPORTS -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/SKF/skf.pb.cc",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				},
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DSkfClient_EXPORTS -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/csm/src/main/jni/SKF/skfClient.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/debug/obj/arm64-v8a/libSkfClient.so",
+			"toolchain" : "330248480682546533"
+		},
+		"SkfJni-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "SkfJni",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target SkfJni",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DSkfJni_EXPORTS -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/cardmanager/src/main/jni/skfjni.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/debug/obj/arm64-v8a/libSkfJni.so",
+			"toolchain" : "330248480682546533"
+		},
+		"TFCardManager-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "TFCardManager",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target TFCardManager",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=aarch64-none-linux-android21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DTFCardManager_EXPORTS -I../../../../../csm/src/main/jni/P11 -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC    -c ",
+					"src" : "/home/wjr/CSM/CSM/cardmanager/src/main/jni/TFCardManager.cpp",
+					"workingDirectory" : "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a"
+				}
+			],
+			"output" : "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/debug/obj/arm64-v8a/libTFCardManager.so",
+			"toolchain" : "330248480682546533"
+		},
+		"protobuf-Debug-arm64-v8a" : 
+		{
+			"abi" : "arm64-v8a",
+			"artifactName" : "protobuf",
+			"buildType" : "debug",
+			"output" : "/home/wjr/CSM/CSM/cardmanager/../csm/src/main/jniLibs/arm64-v8a/libprotobuf_3.7_static.a",
+			"toolchain" : "330248480682546533"
+		}
+	},
+	"toolchains" : 
+	{
+		"330248480682546533" : 
+		{
+			"cCompilerExecutable" : "/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

@@ -1,0 +1,5 @@
+把apk拷贝到该目录下，重命名为app-release.apk
+1/javac GenCrt.java 
+2/java GenCrt
+3/将生成的csm.cer返会给申请的Apk，将其放入其工程目录src/main/assets/csm.cer
+

@@ -1,0 +1,5 @@
+-- CMAKE_SOURCE_DIR->/home/wjr/CSM/cardmanager
+-- PROJECT_SOURCE_DIR->)/home/wjr/CSM/cardmanager
+-- Configuring done
+-- Generating done
+-- Build files have been written to: /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/debug/armeabi-v7a

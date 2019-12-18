@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+   <EditText
+       android:id="@+id/ext_ecc_encrypt_puk"
+       android:hint="请输入公钥Hex值"
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content" />
+
+    <EditText
+        android:layout_marginTop="30dp"
+        app:layout_constraintTop_toBottomOf="@+id/ext_ecc_encrypt_puk"
+        android:id="@+id/ext_ecc_encrypt_plain"
+        android:hint="请输入明文数据"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        app:layout_constraintTop_toBottomOf="@+id/ext_ecc_encrypt_plain"
+        android:layout_marginTop="30dp"
+        android:hint="加密的结果为"
+        android:id="@+id/ext_ecc_encrypt_cipher"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+
+</android.support.constraint.ConstraintLayout>

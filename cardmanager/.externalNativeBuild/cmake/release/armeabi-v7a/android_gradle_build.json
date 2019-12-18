@@ -1,0 +1,221 @@
+
+{
+	"buildFiles" : [ "/home/wjr/CSM/cardmanager/CMakeLists.txt" ],
+	"cFileExtensions" : [ "c" ],
+	"cleanCommands" : 
+	[
+		"/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cc", "cpp" ],
+	"libraries" : 
+	{
+		"Client-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "Client",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a --target Client",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DClient_EXPORTS -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog/Appenders -I../../../../../csm/src/main/jni/plog/Converters -I../../../../../csm/src/main/jni/plog/Formatters -I../../../../../csm/src/main/jni/plog -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/P11 -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/P11/pkcs11.pb.cc",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DClient_EXPORTS -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog/Appenders -I../../../../../csm/src/main/jni/plog/Converters -I../../../../../csm/src/main/jni/plog/Formatters -I../../../../../csm/src/main/jni/plog -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/P11 -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/P11/pkcs11f.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DClient_EXPORTS -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog/Appenders -I../../../../../csm/src/main/jni/plog/Converters -I../../../../../csm/src/main/jni/plog/Formatters -I../../../../../csm/src/main/jni/plog -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/P11 -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/P11/log.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DClient_EXPORTS -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog/Appenders -I../../../../../csm/src/main/jni/plog/Converters -I../../../../../csm/src/main/jni/plog/Formatters -I../../../../../csm/src/main/jni/plog -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/P11 -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/SKF/skf.pb.cc",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DClient_EXPORTS -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog/Appenders -I../../../../../csm/src/main/jni/plog/Converters -I../../../../../csm/src/main/jni/plog/Formatters -I../../../../../csm/src/main/jni/plog -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication -I../../../../../csm/src/main/jni/P11 -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/SKF/skfClient.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "/home/wjr/CSM/cardmanager/build/intermediates/cmake/release/obj/armeabi-v7a/libClient.so",
+			"toolchain" : "330248480682546533"
+		},
+		"RemoteCallClient-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "RemoteCallClient",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a --target RemoteCallClient",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/RemoteCall/Mutex.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/scp02/Scp02Client.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/Communication/LocalSocketClient.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/Communication/BinderClient.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/RemoteCall/ContentFrame.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/RemoteCall/ContentFrame0001.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/RemoteCall/ContentFrame0002.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/RemoteCall/RemoteCall.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/RemoteCall/Return.pb.cc",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/RemoteCall/Pack.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/RemoteCall/GetPackageName.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/RemoteCall/MsgFrame.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC -fvisibility=hidden      -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/scp02/tiny_des.c",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC -fvisibility=hidden      -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/scp02/tiny_sha2.c",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC -fvisibility=hidden      -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/scp02/sm3.c",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC -fvisibility=hidden      -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/scp02/sm4.c",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				},
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/RemoteCall -I../../../../../csm/src/main/jni/scp02 -I../../../../../csm/src/main/jni/Communication  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security  -Oz -DNDEBUG  -fPIC -fvisibility=hidden      -c ",
+					"src" : "/home/wjr/CSM/csm/src/main/jni/scp02/sm4_core.c",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a/libRemoteCallClient.a",
+			"toolchain" : "330248480682546533"
+		},
+		"SKF_JNI-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "SKF_JNI",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a --target SKF_JNI",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSKF_JNI_EXPORTS -DSOFT_CARD_EXTERN_INTERFACE -I../../../../src/main/jni -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "/home/wjr/CSM/cardmanager/build/intermediates/cmake/release/obj/armeabi-v7a/libSKF_JNI.so",
+			"toolchain" : "330248480682546533"
+		},
+		"TFCardManager-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "TFCardManager",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a --target TFCardManager",
+			"buildType" : "release",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -DTFCardManager_EXPORTS -I../../../../../csm/src/main/jni/P11 -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -Oz -DNDEBUG  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/cardmanager/src/main/jni/TFCardManager.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a"
+				}
+			],
+			"output" : "/home/wjr/CSM/cardmanager/build/intermediates/cmake/release/obj/armeabi-v7a/libTFCardManager.so",
+			"toolchain" : "330248480682546533"
+		},
+		"protobuf-Release-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "protobuf",
+			"buildType" : "release",
+			"output" : "/home/wjr/CSM/cardmanager/../csm/src/main/jniLibs/armeabi-v7a/libprotobuf_3.7_static.a",
+			"toolchain" : "330248480682546533"
+		}
+	},
+	"toolchains" : 
+	{
+		"330248480682546533" : 
+		{
+			"cCompilerExecutable" : "/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}

@@ -1,0 +1,45 @@
+{
+  "buildFiles": [
+    "/home/wjr/CSM/CSM/cardmanager/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "TFCardManager-Debug-arm64-v8a": {
+      "artifactName": "TFCardManager",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target TFCardManager",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/debug/obj/arm64-v8a/libTFCardManager.so"
+    },
+    "protobuf-Debug-arm64-v8a": {
+      "artifactName": "protobuf",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/../csm/src/main/jniLibs/arm64-v8a/libprotobuf_3.7_static.a"
+    },
+    "SkfJni-Debug-arm64-v8a": {
+      "artifactName": "SkfJni",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target SkfJni",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/debug/obj/arm64-v8a/libSkfJni.so"
+    },
+    "SkfClient-Debug-arm64-v8a": {
+      "artifactName": "SkfClient",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target SkfClient",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/debug/obj/arm64-v8a/libSkfClient.so"
+    },
+    "RemoteCallClient-Debug-arm64-v8a": {
+      "artifactName": "RemoteCallClient",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target RemoteCallClient",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a/libRemoteCallClient.a"
+    },
+    "Client-Debug-arm64-v8a": {
+      "artifactName": "Client",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/debug/arm64-v8a --target Client",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/debug/obj/arm64-v8a/libClient.so"
+    }
+  }
+}

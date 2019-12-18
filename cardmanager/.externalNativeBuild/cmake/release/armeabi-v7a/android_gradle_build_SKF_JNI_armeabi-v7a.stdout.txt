@@ -1,0 +1,59 @@
+[1/2] Building CXX object CMakeFiles/SKF_JNI.dir/src/main/jni/skfjni.cpp.o
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:105:35: warning: format specifies type 'int' but the argument has type 'ULONG' (aka 'unsigned long') [-Wformat]
+    LOG("szNameList pulSize:%d ", pulSize);
+                            ~~    ^~~~~~~
+                            %lu
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:22:68: note: expanded from macro 'LOG'
+#define LOG(...) __android_log_print(ANDROID_LOG_INFO,"csm_skfjni",__VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:119:35: warning: format specifies type 'int' but the argument has type 'ULONG' (aka 'unsigned long') [-Wformat]
+    LOG("szNameList pulSize:%d ", pulSize);
+                            ~~    ^~~~~~~
+                            %lu
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:22:68: note: expanded from macro 'LOG'
+#define LOG(...) __android_log_print(ANDROID_LOG_INFO,"csm_skfjni",__VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:162:49: warning: format specifies type 'unsigned int' but the argument has type 'ULONG' (aka 'unsigned long') [-Wformat]
+    LOG("SKF_ConnectDev ret = 0x%08x,devH = %p",ret,devH);
+                                ~~~~            ^~~
+                                %08lx
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:22:68: note: expanded from macro 'LOG'
+#define LOG(...) __android_log_print(ANDROID_LOG_INFO,"csm_skfjni",__VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:664:28: warning: format specifies type 'int' but the argument has type 'ULONG' (aka 'unsigned long') [-Wformat]
+    LOG("appName len:%d ", len);
+                     ~~    ^~~
+                     %lu
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:22:68: note: expanded from macro 'LOG'
+#define LOG(...) __android_log_print(ANDROID_LOG_INFO,"csm_skfjni",__VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:674:28: warning: format specifies type 'int' but the argument has type 'ULONG' (aka 'unsigned long') [-Wformat]
+    LOG("appName len:%d ", len);
+                     ~~    ^~~
+                     %lu
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:22:68: note: expanded from macro 'LOG'
+#define LOG(...) __android_log_print(ANDROID_LOG_INFO,"csm_skfjni",__VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:1194:40: warning: format specifies type 'int' but the argument has type 'ULONG' (aka 'unsigned long') [-Wformat]
+    LOG("szcontainername pulsize:%d ", pulsize);
+                                 ~~    ^~~~~~~
+                                 %lu
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:22:68: note: expanded from macro 'LOG'
+#define LOG(...) __android_log_print(ANDROID_LOG_INFO,"csm_skfjni",__VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:1204:40: warning: format specifies type 'int' but the argument has type 'ULONG' (aka 'unsigned long') [-Wformat]
+    LOG("szcontainername pulsize:%d ", pulsize);
+                                 ~~    ^~~~~~~
+                                 %lu
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:22:68: note: expanded from macro 'LOG'
+#define LOG(...) __android_log_print(ANDROID_LOG_INFO,"csm_skfjni",__VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:3716:42: warning: format specifies type 'int' but the argument has type 'ULONG' (aka 'unsigned long') [-Wformat]
+    LOG("SKF_ExportCertificate len = %d",pulcertlen);
+                                     ~~  ^~~~~~~~~~
+                                     %lu
+/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp:22:68: note: expanded from macro 'LOG'
+#define LOG(...) __android_log_print(ANDROID_LOG_INFO,"csm_skfjni",__VA_ARGS__)
+                                                                   ^~~~~~~~~~~
+8 warnings generated.
+[2/2] Linking CXX shared library ../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libSKF_JNI.so

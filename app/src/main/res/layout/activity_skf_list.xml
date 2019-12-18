@@ -1,0 +1,51 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.westone.skflist.SkfListActivity">
+
+    <TextView
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+
+        android:id="@+id/callDesc"
+        android:textColor="#00BCD4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Spinner
+        android:prompt="@string/skf_list"
+        app:layout_constraintTop_toBottomOf="@+id/callDesc"
+        app:layout_constraintLeft_toLeftOf="parent"
+        android:id="@+id/skf_func_list"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <Button
+        app:layout_constraintTop_toBottomOf="@+id/callDesc"
+        app:layout_constraintRight_toRightOf="parent"
+        android:id="@+id/skf_run"
+        android:text="执行"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+    <ListView
+        app:layout_constraintTop_toBottomOf="@id/skf_run"
+        android:id="@+id/skf_list_view"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+    </ListView>
+
+    <TextView
+        android:id="@+id/skf_result"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:textColor="#A81A4A"
+        android:textSize="20sp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+</android.support.constraint.ConstraintLayout>

@@ -1,0 +1,93 @@
+﻿/*******************************************************************************
+ 版权声明: Copyright(C) Westone Co., Ltd. 2017-2018. All rights reserved.
+ 文件名称: channel_error.h
+ 文件描述: 定义CHANNEL模块的错误码
+ 创 建 者: 谢枭
+ 创建时间: 2018年7月24日
+ 修改历史:
+ *******************************************************************************/
+#ifndef ucm_error_h
+#define ucm_error_h
+
+#ifdef __cplusplus
+	extern "C" {
+#endif
+
+/**
+ ---------------------------------------------------
+ |module(8bit)|sub module (8bit)|error no (16bit) |
+ ---------------------------------------------------
+ **/
+/**  Module 定义  **/
+#ifndef MODULE_MAIN_BASE
+#define MODULE_MAIN_BASE		(0X00)
+#endif
+#define UCM				(MODULE_MAIN_BASE + 8)
+
+/*
+ UCM的子模块
+ */
+/* UCM 公共子模块 */
+#define UCM_MAIN_SUB_MODULE			(0x00)
+/* UCM 通道子模块 */
+#define UCM_CHANNEL_SUB_MODULE		(UCM_MAIN_SUB_MODULE + 1)
+/* UCM 后台子模块 */
+#define UCM_CSMP_SUB_MODULE			(UCM_MAIN_SUB_MODULE + 2)
+
+/* UCM 模块的成功和不知道错误原因 */
+#define UCM_OK							( 0 )
+#define UCM_GENERAL_ERROR				(0xFFFFFFFF)
+
+/*
+ UCM 模块公共错误码
+ */
+#define UCM_MAIN_SUB_MODULE_BASE_EER		((UCM << 24) | (UCM_MAIN_SUB_MODULE << 16))
+#define UCM_ERROR_PARAMETER					(UCM_MAIN_SUB_MODULE_BASE_EER + 1)
+#define UCM_NOT_INITIALIZED					(UCM_MAIN_SUB_MODULE_BASE_EER + 2)
+#define UCM_ERROR_DEVICE					(UCM_MAIN_SUB_MODULE_BASE_EER + 3)
+#define UCM_ERROR_STATUS					(UCM_MAIN_SUB_MODULE_BASE_EER + 4)
+#define UCM_ERROR_NEED_REGIST				(UCM_MAIN_SUB_MODULE_BASE_EER + 5)
+#define UCM_ERROR_REGIST_ALREADY			(UCM_MAIN_SUB_MODULE_BASE_EER + 6)
+#define UCM_ERROR_BUF_OVERFLOW				(UCM_MAIN_SUB_MODULE_BASE_EER + 9)
+#define UCM_ERROR_RESOURCE_EMPTY			(UCM_MAIN_SUB_MODULE_BASE_EER + 10)
+#define UCM_ERROR_MEMORY					(UCM_MAIN_SUB_MODULE_BASE_EER + 11)
+#define UCM_ALREADY_INITIALIZED				(UCM_MAIN_SUB_MODULE_BASE_EER + 12)
+#define UCM_ERROR_PARAM_FORMAT				(UCM_MAIN_SUB_MODULE_BASE_EER + 13)
+#define UCM_ERROR_NOT_SUPPORT				(UCM_MAIN_SUB_MODULE_BASE_EER + 14)
+#define UCM_SCM_NOT_INITIALIZED				(UCM_MAIN_SUB_MODULE_BASE_EER + 15)
+#define UCM_ERROR_USER_NAME_UNMATCH			(UCM_MAIN_SUB_MODULE_BASE_EER + 16)
+#define UCM_ERROR_STATUS_OBJ_NUM			(UCM_MAIN_SUB_MODULE_BASE_EER + 16)
+
+/*
+ UCM 模块通道错误码
+ */
+#define UCM_CHANNEL_SUB_MODULE_BASE_EER		((UCM << 24) | (UCM_CHANNEL_SUB_MODULE << 16))
+#define UCM_CHANNEL_ERR_INIT				(UCM_CHANNEL_SUB_MODULE_BASE_EER + 1)
+#define UCM_CHANNEL_ERR_CONNECT				(UCM_CHANNEL_SUB_MODULE_BASE_EER + 2)
+#define UCM_CHANNEL_ERR_SEND				(UCM_CHANNEL_SUB_MODULE_BASE_EER + 3)
+#define UCM_CHANNEL_ERR_RECV				(UCM_CHANNEL_SUB_MODULE_BASE_EER + 4)
+#define UCM_CHANNEL_ERR_CERT_FILE			(UCM_CHANNEL_SUB_MODULE_BASE_EER + 5)
+#define UCM_CHANNEL_ERR_LOAD_ENGINE			(UCM_CHANNEL_SUB_MODULE_BASE_EER + 6)
+
+/*
+ UCM 模块后台CMSP错误码
+ */
+#define UCM_CMSP_SUB_MODULE_BASE_EER					((UCM << 24) | (UCM_CSMP_SUB_MODULE << 16))
+#define UCM_CSMP_ERR_GENERAL							(UCM_CMSP_SUB_MODULE_BASE_EER + 1)
+#define UCM_CSMP_ERR_TOKEN_TIME_OUT						(UCM_CMSP_SUB_MODULE_BASE_EER + 2)
+#define UCM_CSMP_ERR_TOKEN_NOT_EXIST					(UCM_CMSP_SUB_MODULE_BASE_EER + 3)
+#define UCM_CSMP_ERR_GROUP_NOT_EXIST					(UCM_CMSP_SUB_MODULE_BASE_EER + 4)
+#define UCM_CSMP_ERR_APP_USER_NOT_EXIST					(UCM_CMSP_SUB_MODULE_BASE_EER + 5)
+#define UCM_CSMP_ERR_APP_VERIFY_CODE_ILLEGAL			(UCM_CMSP_SUB_MODULE_BASE_EER + 6)
+#define UCM_CSMP_ERR_CERT_SUBJECT_ILLEGAL				(UCM_CMSP_SUB_MODULE_BASE_EER + 7)
+#define UCM_CSMP_ERR_APP_NOT_EXIST						(UCM_CMSP_SUB_MODULE_BASE_EER + 8)
+#define UCM_CSMP_ERR_APP_HAVE_NO_CERT					(UCM_CMSP_SUB_MODULE_BASE_EER + 9)
+#define UCM_CSMP_ERR_APP_ASTYPE_UNSUPPORT				(UCM_CMSP_SUB_MODULE_BASE_EER + 10)
+#define UCM_CSMP_ERR_APP_USER_KEYTAG_INVALID			(UCM_CMSP_SUB_MODULE_BASE_EER + 11)
+#define UCP_CSMP_ERR_TERMINAL_VERIFY_CODE_TIME_OUT		(UCM_CMSP_SUB_MODULE_BASE_EER + 12)
+
+#ifdef __cplusplus
+}
+#endif
+#endif
+

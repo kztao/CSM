@@ -1,0 +1,19 @@
+syntax = "proto2";
+
+package com.westone.returncode;
+
+message ResponsePack
+{
+	required uint64 ret = 1;
+	optional bytes content = 2;
+}
+
+/********************Error*******************/
+message Req_Error{
+    required uint64 ret = 1;
+}
+message Rsp_Error{
+
+}
+
+

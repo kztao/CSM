@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <EditText
+        android:id="@+id/read_file_name"
+        android:hint="请输入文件名称"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
+
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/read_file_name"
+        android:id="@+id/read_file_offset"
+        android:hint="请输入读取的位置偏移量"
+        android:digits="0123456789"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <EditText
+        app:layout_constraintTop_toBottomOf="@+id/read_file_offset"
+        android:id="@+id/read_file_len"
+        android:hint="请输入读取文件的长度"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    <View
+        app:layout_constraintTop_toBottomOf="@+id/read_file_len"
+        android:background="#7e7a7e"
+        android:id="@+id/read_file_split"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+</android.support.constraint.ConstraintLayout>

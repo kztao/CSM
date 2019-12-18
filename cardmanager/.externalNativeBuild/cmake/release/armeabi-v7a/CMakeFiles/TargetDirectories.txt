@@ -1,0 +1,6 @@
+/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/edit_cache.dir
+/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/SKF_JNI.dir
+/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/Client.dir
+/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/RemoteCallClient.dir
+/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/rebuild_cache.dir
+/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/release/armeabi-v7a/CMakeFiles/TFCardManager.dir

@@ -1,0 +1,20 @@
+CMake Error at CMakeLists.txt:76 (add_library):
+  Cannot find source file:
+
+    ../csm/src/main/jni/P11/pkcs11.pb.cc
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error at CMakeLists.txt:45 (add_library):
+  Cannot find source file:
+
+    ../csm/src/main/jni/RemoteCall/Mutex.cpp
+
+  Tried extensions .c .C .c++ .cc .cpp .cxx .m .M .mm .h .hh .h++ .hm .hpp
+  .hxx .in .txx
+
+
+CMake Error: CMake can not determine linker language for target: Client
+CMake Error: CMake can not determine linker language for target: RemoteCallClient

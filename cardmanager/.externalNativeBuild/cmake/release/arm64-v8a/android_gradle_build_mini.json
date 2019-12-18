@@ -1,0 +1,45 @@
+{
+  "buildFiles": [
+    "/home/wjr/CSM/CSM/cardmanager/CMakeLists.txt"
+  ],
+  "cleanCommands": [
+    "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a --target clean"
+  ],
+  "libraries": {
+    "TFCardManager-Release-arm64-v8a": {
+      "artifactName": "TFCardManager",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a --target TFCardManager",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/release/obj/arm64-v8a/libTFCardManager.so"
+    },
+    "protobuf-Release-arm64-v8a": {
+      "artifactName": "protobuf",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/../csm/src/main/jniLibs/arm64-v8a/libprotobuf_3.7_static.a"
+    },
+    "RemoteCallClient-Release-arm64-v8a": {
+      "artifactName": "RemoteCallClient",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a --target RemoteCallClient",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a/libRemoteCallClient.a"
+    },
+    "SkfClient-Release-arm64-v8a": {
+      "artifactName": "SkfClient",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a --target SkfClient",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/release/obj/arm64-v8a/libSkfClient.so"
+    },
+    "SkfJni-Release-arm64-v8a": {
+      "artifactName": "SkfJni",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a --target SkfJni",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/release/obj/arm64-v8a/libSkfJni.so"
+    },
+    "Client-Release-arm64-v8a": {
+      "artifactName": "Client",
+      "buildCommand": "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/CSM/cardmanager/.externalNativeBuild/cmake/release/arm64-v8a --target Client",
+      "abi": "arm64-v8a",
+      "output": "/home/wjr/CSM/CSM/cardmanager/build/intermediates/cmake/release/obj/arm64-v8a/libClient.so"
+    }
+  }
+}

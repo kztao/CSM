@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RadioGroup
+        android:id="@+id/alg_choose"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+        <RadioButton
+            android:text="加密"
+            android:id="@+id/alg_choose_enc"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+        <RadioButton
+            android:text="解密"
+            android:id="@+id/alg_choose_dec"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+
+        <RadioButton
+            android:text="摘要"
+            android:id="@+id/alg_choose_dig"
+            android:layout_width="match_parent"
+            android:layout_height="60dp" />
+    </RadioGroup>
+</android.support.constraint.ConstraintLayout>

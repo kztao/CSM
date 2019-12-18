@@ -1,0 +1,1101 @@
+
+syntax = "proto3";
+
+package com.westone.skf;
+
+message WST_PROTO_UINT32{
+	uint32 u32value = 1;
+}
+
+message WST_PROTO_BOOL{
+	bool boolvalue = 1;
+}
+
+/**********************版本************************/
+message SKF_Version{
+		WST_PROTO_UINT32  major = 1;//主版本号
+		WST_PROTO_UINT32 minor = 2;//次版本号
+}
+
+/**********************设备信息************************/
+message SKF_DevInfo{
+		SKF_Version  version = 1;//主版本号
+		bytes Manufacturer = 2;//设备厂商信息
+		bytes Issuer = 3;//应用发行者信息
+		bytes Label = 4;//标签
+		bytes SerialNumber = 5;//序列号
+		SKF_Version HWVersion = 6;//设备硬件版本
+		SKF_Version FirmwareVersion = 7;//设备本身固件版本
+		WST_PROTO_UINT32 AlgSymCap = 8;//支持对称算法标志
+		WST_PROTO_UINT32 AlgAsymCap = 9;//支持非对称算法标志
+		WST_PROTO_UINT32 AlgHashCap = 10;//支持杂凑算法标志
+		WST_PROTO_UINT32 DevAuthAlgId = 11;//设备认证采用的算法标志
+		WST_PROTO_UINT32 TotalSpace = 12;//设备存储空间
+		WST_PROTO_UINT32 FreeSpace = 13;//设备剩余空间
+		WST_PROTO_UINT32 MaxEccBufferSize = 14;//能够处理的ECC加密数据大小
+		WST_PROTO_UINT32 MaxBufferSize = 15;//能够处理的分组运算和杂凑运算的数据大小
+		bytes Reserved = 16;//保留扩展
+}
+
+/**********************RSA公钥交换数据块************************/
+message SKF_RSAPUBLICKEYBLOB{
+		WST_PROTO_UINT32  AlgID = 1;//算法标示号
+		WST_PROTO_UINT32 BitLen = 2;//模数的实际位长度，必须是8的倍数
+		bytes Modulus = 3;//模数n=p*q,实际长度为BitLen/8字节
+		bytes PublicExponent = 4;//公开密钥
+}
+
+/**********************RSA私钥交换数据块************************/
+message SKF_RSAPRIVATEKEYBLOB{
+		WST_PROTO_UINT32  AlgID = 1;//算法标示号
+		WST_PROTO_UINT32 BitLen = 2;//模数的实际位长度，必须是8的倍数
+		bytes Modulus = 3;//模数n=p*q,实际长度为BitLen/8字节
+		bytes PublicExponent = 4;//公开密钥
+		bytes PrivateExponent = 5;//私有秘钥d
+		bytes Prime1 = 6;//素数p
+		bytes Prime2 = 7;//素数q
+		bytes Prime1Exponent = 8;//d mod (p - 1)
+		bytes Prime2Exponent = 9;//d mod (q - 1)
+		bytes Coefficient = 10;//q mod p的乘法逆元
+}
+
+/**********************ECC公钥交换数据块************************/
+message SKF_ECCPUBLICKEYBLOB{
+		WST_PROTO_UINT32 BitLen = 1;//模数的实际位长度，必须是8的倍数
+		bytes XCoordinate = 2;
+		bytes YCoordinate = 3;
+}
+
+/**********************ECC私钥交换数据块************************/
+message SKF_ECCPRIVATEKEYBLOB{
+		WST_PROTO_UINT32 BitLen = 1;
+		bytes PrivateKey = 2;
+}
+
+/**********************ECCCIPHERBLOB************************/
+message SKF_ECCCIPHERBLOB{
+		bytes XCoordinate = 1;
+		bytes YCoordinate = 2;
+		bytes HASH = 3;
+		WST_PROTO_UINT32 CipherLen = 4;
+		bytes Cipher = 5;
+}
+
+/**********************ECCSIGNATUREBLOB************************/
+message SKF_ECCSIGNATUREBLOB{
+		bytes r = 1;
+		bytes s = 2;
+}
+
+/**********************BLOCKCIPHERPARAM************************/
+message SKF_BLOCKCIPHERPARAM{
+		bytes IV = 1;
+		WST_PROTO_UINT32 IVLen = 2;
+		WST_PROTO_UINT32 PaddingType = 3;
+		WST_PROTO_UINT32 FeedBitLen = 4;
+}
+
+/**********************ENVELOPEDKEYBLOB************************/
+message SKF_ENVELOPEDKEYBLOB{
+		WST_PROTO_UINT32 Version = 1;
+		WST_PROTO_UINT32 ulSymmAlgID = 2;
+		WST_PROTO_UINT32 ulBits = 3;
+		bytes cbEncryptedPriKey = 4;
+		SKF_ECCPUBLICKEYBLOB PubKey = 5;
+		SKF_ECCCIPHERBLOB ECCCipherBlob = 6;
+}
+
+/**********************FILEATTRIBUTES************************/
+message SKF_FILEATTRIBUTES{
+		bytes FileName = 1;
+		WST_PROTO_UINT32 FileSize = 2;
+		WST_PROTO_UINT32 ReadRights = 3;
+		WST_PROTO_UINT32 WriteRights = 4;
+}
+
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+/***********************************************************/
+
+/**********************CreateSkfSoftCard************************/
+message Req_CreateSkfSoftCard{
+}
+
+message Rsp_CreateSkfSoftCard{
+
+}
+
+/**********************DeleteSkfSoftCard************************/
+message Req_SKF_SimStatusChange{
+    string action = 1;
+    uint32 codes = 2; 
+}
+
+message Rsp_SKF_SimStatusChange{
+   
+}
+
+
+
+/**********************SKF_WaitForDevEvent************************/
+message Req_SKF_WaitForDevEvent{
+		bytes szDevName = 1;
+		WST_PROTO_UINT32 pulDevNameLen = 2;
+		WST_PROTO_UINT32 pulEvent = 3;
+}
+
+message Rsp_SKF_WaitForDevEvent{
+		bytes szDevName = 1;
+		WST_PROTO_UINT32 pulDevNameLen = 2;
+		WST_PROTO_UINT32 pulEvent = 3;
+}
+
+/**********************SKF_CancelWaitForDevEvent************************/
+message Req_SKF_CancelWaitForDevEvent{
+
+}
+
+message Rsp_SKF_CancelWaitForDevEvent{
+
+}
+
+/**********************SKF_EnumDev************************/
+message Req_SKF_EnumDev{
+		WST_PROTO_BOOL bPresent = 1;
+		bytes szNameList = 2;
+		WST_PROTO_UINT32 pulSize = 3;
+}
+
+message Rsp_SKF_EnumDev{
+		bytes szNameList = 1;
+		WST_PROTO_UINT32 pulSize = 2;
+}
+
+/**********************SKF_ConnectDev************************/
+message Req_SKF_ConnectDev{
+		string szName = 1;
+		WST_PROTO_UINT32 phDev = 2;
+}
+
+message Rsp_SKF_ConnectDev{
+		WST_PROTO_UINT32 phDev = 1;
+}
+
+/**********************SKF_DisConnectDev************************/
+message Req_SKF_DisConnectDev{
+		WST_PROTO_UINT32 hDev = 1;
+}
+
+message Rsp_SKF_DisConnectDev{
+
+}
+
+/**********************SKF_GetDevState************************/
+message Req_SKF_GetDevState{
+		string szDevName = 1;
+		WST_PROTO_UINT32 pulDevState = 2;
+}
+
+message Rsp_SKF_GetDevState{
+		WST_PROTO_UINT32 pulDevState = 1;
+}
+
+/**********************SKF_SetLabel************************/
+message Req_SKF_SetLabel{
+		WST_PROTO_UINT32 hDev = 1;
+		string szLabel = 2;
+}
+
+message Rsp_SKF_SetLabel{
+
+}
+
+/**********************SKF_GetDevInfo************************/
+message Req_SKF_GetDevInfo{
+		WST_PROTO_UINT32 hDev = 1;
+		SKF_DevInfo pDevInfo = 2;
+}
+
+message Rsp_SKF_GetDevInfo{
+		SKF_DevInfo pDevInfo = 1;
+}
+
+/**********************SKF_LockDev************************/
+message Req_SKF_LockDev{
+		WST_PROTO_UINT32 hDev = 1;
+		WST_PROTO_UINT32 ulTimeOut = 2;
+}
+
+message Rsp_SKF_LockDev{
+
+}
+
+/**********************SKF_UnlockDev************************/
+message Req_SKF_UnlockDev{
+		WST_PROTO_UINT32 hDev = 1;
+}
+
+message Rsp_SKF_UnlockDev{
+
+}
+
+/**********************SKF_ChangeDevAuthKey************************/
+message Req_SKF_ChangeDevAuthKey{
+		WST_PROTO_UINT32 hDev = 1;
+		bytes pbKeyValue = 2;
+		WST_PROTO_UINT32 ulKeyLen = 3;
+}
+
+message Rsp_SKF_ChangeDevAuthKey{
+
+}
+
+/**********************SKF_DevAuth************************/
+message Req_SKF_DevAuth{
+		WST_PROTO_UINT32 hDev = 1;
+		bytes pbAuthData = 2;
+		WST_PROTO_UINT32 ulLen = 3;
+}
+
+message Rsp_SKF_DevAuth{
+
+}
+
+/**********************SKF_ChangePIN************************/
+message Req_SKF_ChangePIN{
+		WST_PROTO_UINT32 hApplication = 1;
+		WST_PROTO_UINT32 ulPINType = 2;
+		string szOldPIN = 3;
+		string szNewPIN = 4;
+		WST_PROTO_UINT32 pulRetryCount = 5;
+}
+
+message Rsp_SKF_ChangePIN{
+		WST_PROTO_UINT32 pulRetryCount = 1;
+}
+
+/**********************SKF_GetPINInfo************************/
+message Req_SKF_GetPINInfo{
+		WST_PROTO_UINT32 hApplication = 1;
+		WST_PROTO_UINT32 ulPINType = 2;
+		WST_PROTO_UINT32 pulMaxRetryCount = 3;
+		WST_PROTO_UINT32 pulRemainRetryCount = 4;
+		WST_PROTO_BOOL pbDefaultPin = 5;
+}
+
+message Rsp_SKF_GetPINInfo{
+		WST_PROTO_UINT32 pulMaxRetryCount = 1;
+		WST_PROTO_UINT32 pulRemainRetryCount = 2;
+		WST_PROTO_BOOL pbDefaultPin = 3;
+}
+
+/**********************SKF_VerifyPIN************************/
+message Req_SKF_VerifyPIN{
+		WST_PROTO_UINT32 hApplication = 1;
+		WST_PROTO_UINT32 ulPINType = 2;
+		string szPIN = 3;
+		WST_PROTO_UINT32 pulRetryCount = 4;
+}
+
+message Rsp_SKF_VerifyPIN{
+		WST_PROTO_UINT32 pulRetryCount = 1;
+}
+
+
+/**********************SKF_UnblockPIN************************/
+message Req_SKF_UnblockPIN{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szAdminPIN = 2;
+		string szNewUserPIN = 3;
+		WST_PROTO_UINT32 pulRetryCount = 4;
+}
+
+message Rsp_SKF_UnblockPIN{
+		WST_PROTO_UINT32 pulRetryCount = 1;
+}
+
+/**********************SKF_ClearSecureState************************/
+message Req_SKF_ClearSecureState{
+		WST_PROTO_UINT32 hApplication = 1;
+}
+
+message Rsp_SKF_ClearSecureState{
+
+}
+
+/**********************SKF_CreateApplication************************/
+message Req_SKF_CreateApplication{
+		WST_PROTO_UINT32 hDev = 1;
+		string szAppName = 2;
+		string szAdminPIN = 3;
+		WST_PROTO_UINT32 dwAdminPinRetryCount = 4;
+		string szUserPIN = 5;
+		WST_PROTO_UINT32 dwUserPinRetryCount = 6;
+		WST_PROTO_UINT32 dwCreateFileRights = 7;
+		WST_PROTO_UINT32 phApplication = 8;
+}
+
+message Rsp_SKF_CreateApplication{
+		WST_PROTO_UINT32 phApplication = 1;
+}
+
+/**********************SKF_EnumApplication************************/
+message Req_SKF_EnumApplication{
+		WST_PROTO_UINT32 hDev = 1;
+		bytes szAppName = 2;
+		WST_PROTO_UINT32 pulSize = 3;
+}
+
+message Rsp_SKF_EnumApplication{
+		bytes szAppName = 1;
+		WST_PROTO_UINT32 pulSize = 2;
+}
+
+/**********************SKF_DeleteApplication************************/
+message Req_SKF_DeleteApplication{
+		WST_PROTO_UINT32 hDev = 1;
+		string szAppName = 2;
+}
+
+message Rsp_SKF_DeleteApplication{
+
+}
+
+/**********************SKF_OpenApplication************************/
+message Req_SKF_OpenApplication{
+		WST_PROTO_UINT32 hDev = 1;
+		string szAppName = 2;
+		WST_PROTO_UINT32 phApplication = 3;
+}
+
+message Rsp_SKF_OpenApplication{
+		WST_PROTO_UINT32 phApplication = 1;
+}
+
+/**********************SKF_CloseApplication************************/
+message Req_SKF_CloseApplication{
+		WST_PROTO_UINT32 hApplication = 1;
+}
+
+message Rsp_SKF_CloseApplication{
+
+}
+
+/**********************SKF_CreateFile************************/
+message Req_SKF_CreateFile{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szFileName = 2;
+		WST_PROTO_UINT32 ulFileSize = 3;
+		WST_PROTO_UINT32 ulReadRights = 4;
+		WST_PROTO_UINT32 ulWriteRights = 5;
+}
+
+message Rsp_SKF_CreateFile{
+
+}
+
+/**********************SKF_DeleteFile************************/
+message Req_SKF_DeleteFile{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szFileName = 2;
+}
+
+message Rsp_SKF_DeleteFile{
+
+}
+
+/**********************SKF_EnumFiles************************/
+message Req_SKF_EnumFiles{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szFileName = 2;
+		WST_PROTO_UINT32 pulSize = 3;
+}
+
+message Rsp_SKF_EnumFiles{
+		string szFileName = 1;
+		WST_PROTO_UINT32 pulSize = 2;
+}
+
+/**********************SKF_GetFileInfo************************/
+message Req_SKF_GetFileInfo{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szFileName = 2;
+		SKF_FILEATTRIBUTES pFileInfo = 3;
+}
+
+message Rsp_SKF_GetFileInfo{
+		SKF_FILEATTRIBUTES pFileInfo = 1;
+}
+
+/**********************SKF_ReadFile************************/
+message Req_SKF_ReadFile{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szFileName = 2;
+		WST_PROTO_UINT32 ulOffset = 3;
+		WST_PROTO_UINT32 ulSize = 4;
+		bytes pbOutData = 5;
+		WST_PROTO_UINT32 pulOutLen = 6;
+}
+
+message Rsp_SKF_ReadFile{
+		bytes pbOutData = 1;
+		WST_PROTO_UINT32 pulOutLen = 2;
+}
+
+/**********************SKF_WriteFile************************/
+message Req_SKF_WriteFile{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szFileName = 2;
+		WST_PROTO_UINT32 ulOffset = 3;
+		bytes pbData = 4;
+		WST_PROTO_UINT32 ulSize = 5;
+}
+
+message Rsp_SKF_WriteFile{
+
+}
+
+/**********************SKF_CreateContainer************************/
+message Req_SKF_CreateContainer{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szContainerName = 2;
+		WST_PROTO_UINT32 phContainer = 3;
+}
+
+message Rsp_SKF_CreateContainer{
+		WST_PROTO_UINT32 phContainer = 1;
+}
+
+/**********************SKF_DeleteContainer************************/
+message Req_SKF_DeleteContainer{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szContainerName = 2;
+}
+
+message Rsp_SKF_DeleteContainer{
+
+}
+
+/**********************SKF_OpenContainer************************/
+message Req_SKF_OpenContainer{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szContainerName = 2;
+		WST_PROTO_UINT32 phContainer = 3;
+}
+
+message Rsp_SKF_OpenContainer{
+		WST_PROTO_UINT32 phContainer = 1;
+}
+
+/**********************SKF_CloseContainer************************/
+message Req_SKF_CloseContainer{
+		WST_PROTO_UINT32 hContainer = 1;
+}
+
+message Rsp_SKF_CloseContainer{
+
+}
+
+/**********************SKF_EnumContainer************************/
+message Req_SKF_EnumContainer{
+		WST_PROTO_UINT32 hApplication = 1;
+		string szContainerName = 2;
+		WST_PROTO_UINT32 pulSize = 3;
+}
+
+message Rsp_SKF_EnumContainer{
+		string szContainerName = 1;
+		WST_PROTO_UINT32 pulSize = 2;
+}
+
+/**********************SKF_GetContainerType************************/
+message Req_SKF_GetContainerType{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 pulContainerType = 2;
+}
+
+message Rsp_SKF_GetContainerType{
+		WST_PROTO_UINT32 pulContainerType = 1;
+}
+
+/**********************SKF_GenRandom************************/
+message Req_SKF_GenRandom{
+		WST_PROTO_UINT32 hDev = 1;
+		bytes pbRandom = 2;
+		WST_PROTO_UINT32 ulRandomLen = 3;
+}
+
+message Rsp_SKF_GenRandom{
+		bytes pbRandom = 1;
+}
+
+/**********************SKF_GenExtRSAKey************************/
+message Req_SKF_GenExtRSAKey{
+		WST_PROTO_UINT32 hDev = 1;
+		WST_PROTO_UINT32 ulBitsLen = 2;
+		SKF_RSAPUBLICKEYBLOB pBlob = 3;
+}
+
+message Rsp_SKF_GenExtRSAKey{
+		SKF_RSAPUBLICKEYBLOB pBlob = 1;
+}
+
+/**********************SKF_GenRSAKeyPair************************/
+message Req_SKF_GenRSAKeyPair{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 ulBitsLen = 2;
+		SKF_RSAPUBLICKEYBLOB pBlob = 3;
+}
+
+message Rsp_SKF_GenRSAKeyPair{
+		SKF_RSAPUBLICKEYBLOB pBlob = 1;
+}
+
+/**********************SKF_ImportRSAKeyPair************************/
+message Req_SKF_ImportRSAKeyPair{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 ulSymmAlgID = 2;
+		bytes pbWrappedKey = 3;
+		WST_PROTO_UINT32 ulWrappedKeyLen = 4;
+		bytes pbEncryptedData = 5;
+		WST_PROTO_UINT32 ulEncryptedDataLen = 6;
+}
+
+message Rsp_SKF_ImportRSAKeyPair{
+
+}
+
+/**********************SKF_RSASignData************************/
+message Req_SKF_RSASignData{
+		WST_PROTO_UINT32 hContainer = 1;
+		bytes pbData = 2;
+		WST_PROTO_UINT32 ulDataLen = 3;
+		bytes pbSignature = 4;
+		WST_PROTO_UINT32 pulSigLen = 5;
+}
+
+message Rsp_SKF_RSASignData{
+		bytes pbSignature = 1;
+		WST_PROTO_UINT32 pulSigLen = 2;
+}
+
+/**********************SKF_RSAVerify************************/
+message Req_SKF_RSAVerify{
+		WST_PROTO_UINT32 hDev = 1;
+		SKF_RSAPUBLICKEYBLOB pRSAPubKeyBlob = 2;
+		bytes pbData = 3;
+		WST_PROTO_UINT32 ulDataLen = 4;
+		bytes pbSignature = 5;
+		WST_PROTO_UINT32 ulSigLen = 6;
+}
+
+message Rsp_SKF_RSAVerify{
+
+}
+
+/**********************SKF_RSAExportSessionKey************************/
+message Req_SKF_RSAExportSessionKey{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 ulAlgID = 2;
+		SKF_RSAPUBLICKEYBLOB pPubKey = 3;
+		bytes pbData = 5;
+		WST_PROTO_UINT32 pulDataLen = 6;
+		WST_PROTO_UINT32 phSessionKey = 7;
+}
+
+message Rsp_SKF_RSAExportSessionKey{
+
+}
+
+/**********************SKF_ExtRSAPubKeyOperation************************/
+message Req_SKF_ExtRSAPubKeyOperation{
+		WST_PROTO_UINT32 hDev = 1;
+		SKF_RSAPUBLICKEYBLOB pRSAPubKeyBlob = 2;
+		bytes pbInput = 3;
+		WST_PROTO_UINT32 ulInputLen = 4;
+		bytes pbOutData = 5;
+		WST_PROTO_UINT32 pulOutputLen = 6;
+}
+
+message Rsp_SKF_ExtRSAPubKeyOperation{
+		bytes pbOutData = 1;
+		WST_PROTO_UINT32 pulOutputLen = 2;
+}
+
+/**********************SKF_ExtRSAPriKeyOperation************************/
+message Req_SKF_ExtRSAPriKeyOperation{
+		WST_PROTO_UINT32 hDev = 1;
+		SKF_RSAPRIVATEKEYBLOB pRSAPriKeyBlob = 2;
+		bytes pbInput = 3;
+		WST_PROTO_UINT32 ulInputLen = 4;
+		bytes pbOutData = 5;
+		WST_PROTO_UINT32 pulOutputLen = 6;
+}
+
+message Rsp_SKF_ExtRSAPriKeyOperation{
+		bytes pbOutData = 1;
+		WST_PROTO_UINT32 pulOutputLen = 2;
+}
+
+/**********************SKF_GenECCKeyPair************************/
+message Req_SKF_GenECCKeyPair{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 ulAlgID = 2;
+		SKF_ECCPUBLICKEYBLOB pBlob = 3;
+}
+
+message Rsp_SKF_GenECCKeyPair{
+		SKF_ECCPUBLICKEYBLOB pBlob = 1;
+}
+
+/**********************SKF_ImportECCKeyPair************************/
+message Req_SKF_ImportECCKeyPair{
+		WST_PROTO_UINT32 hContainer = 1;
+		SKF_ENVELOPEDKEYBLOB pEnvelopedKeyBlob = 2;
+}
+
+message Rsp_SKF_ImportECCKeyPair{
+
+}
+
+/**********************SKF_ECCSignData************************/
+message Req_SKF_ECCSignData{
+		WST_PROTO_UINT32 hContainer = 1;
+		bytes pbData = 2;
+		WST_PROTO_UINT32 ulDataLen = 3;
+		SKF_ECCSIGNATUREBLOB pSignature = 4;
+}
+
+message Rsp_SKF_ECCSignData{
+		SKF_ECCSIGNATUREBLOB pSignature = 1;
+}
+
+/**********************SKF_ECCVerify************************/
+message Req_SKF_ECCVerify{
+		WST_PROTO_UINT32 hDev = 1;
+		SKF_ECCPUBLICKEYBLOB pECCPubKeyBlob = 2;
+		bytes pbData = 3;
+		WST_PROTO_UINT32 ulDataLen = 4;
+		SKF_ECCSIGNATUREBLOB pSignature = 5;
+}
+
+message Rsp_SKF_ECCVerify{
+
+}
+
+/**********************SKF_ECCExportSessionKey************************/
+message Req_SKF_ECCExportSessionKey{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 ulAlgID = 2;
+		SKF_ECCPUBLICKEYBLOB pPubKey = 3;
+		SKF_ECCCIPHERBLOB pData = 4;
+		WST_PROTO_UINT32 phSessionKey = 5;
+}
+
+message Rsp_SKF_ECCExportSessionKey{
+		SKF_ECCCIPHERBLOB pData = 1;
+		WST_PROTO_UINT32 phSessionKey = 2;
+}
+
+/**********************SKF_ExtECCEncrypt************************/
+message Req_SKF_ExtECCEncrypt{
+		WST_PROTO_UINT32 hDev = 1;
+		SKF_ECCPUBLICKEYBLOB pECCPubKeyBlob = 2;
+		bytes pbPlainText = 3;
+		WST_PROTO_UINT32 ulPlainTextLen = 4;
+		SKF_ECCCIPHERBLOB pbCipherText = 5;
+}
+
+message Rsp_SKF_ExtECCEncrypt{
+		SKF_ECCCIPHERBLOB pbCipherText = 1;
+}
+
+/**********************SKF_ExtECCDecrypt************************/
+message Req_SKF_ExtECCDecrypt{
+		WST_PROTO_UINT32 hDev = 1;
+		SKF_ECCPRIVATEKEYBLOB pECCPriKeyBlob = 2;
+		SKF_ECCCIPHERBLOB pbCipherText= 3;
+		bytes pbPlainText = 4;
+		WST_PROTO_UINT32 pulPlainTextLen = 5;
+}
+
+message Rsp_SKF_ExtECCDecrypt{
+		bytes pbPlainText = 1;
+		WST_PROTO_UINT32 pulPlainTextLen = 2;
+}
+
+/**********************SKF_ExtECCSign************************/
+message Req_SKF_ExtECCSign{
+		WST_PROTO_UINT32 hDev = 1;
+		SKF_ECCPRIVATEKEYBLOB pECCPriKeyBlob = 2;
+		bytes pbData = 3;
+		WST_PROTO_UINT32 ulDataLen = 4;
+		SKF_ECCSIGNATUREBLOB pSignature = 5;
+}
+
+message Rsp_SKF_ExtECCSign{
+		SKF_ECCSIGNATUREBLOB pSignature = 1;
+}
+
+/**********************SKF_ExtECCVerify************************/
+message Req_SKF_ExtECCVerify{
+		WST_PROTO_UINT32 hDev = 1;
+		SKF_ECCPUBLICKEYBLOB pECCPubKeyBlob = 2;
+		bytes pbData = 3;
+		WST_PROTO_UINT32 ulDataLen = 4;
+		SKF_ECCSIGNATUREBLOB pSignature = 5;
+}
+
+message Rsp_SKF_ExtECCVerify{
+
+}
+
+/**********************SKF_GenerateAgreementDataWithECC************************/
+message Req_SKF_GenerateAgreementDataWithECC{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 ulAlgID = 2;
+		SKF_ECCPUBLICKEYBLOB pTempECCPubKeyBlob = 3;
+		bytes pbID = 4;
+		WST_PROTO_UINT32 ulIDLen = 5;
+		WST_PROTO_UINT32 phAgreementHandle = 6;
+}
+
+message Rsp_SKF_GenerateAgreementDataWithECC{
+		SKF_ECCPUBLICKEYBLOB pTempECCPubKeyBlob = 1;
+		WST_PROTO_UINT32 phAgreementHandle = 2;
+}
+
+/**********************SKF_GenerateAgreementDataAndKeyWithECC************************/
+message Req_SKF_GenerateAgreementDataAndKeyWithECC{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 ulAlgID = 2;
+		SKF_ECCPUBLICKEYBLOB pSponsorECCPubKeyBlob = 3;
+		SKF_ECCPUBLICKEYBLOB pSponsorTempECCPubKeyBlob = 4;
+		SKF_ECCPUBLICKEYBLOB pTempECCPubKeyBlob = 5;
+		bytes pbID = 6;
+		WST_PROTO_UINT32 ulIDLen = 7;
+		bytes pbSponsorID = 8;
+		WST_PROTO_UINT32 ulSponsorIDLen = 9;
+		WST_PROTO_UINT32 phKeyHandle = 10;
+}
+
+message Rsp_SKF_GenerateAgreementDataAndKeyWithECC{
+		SKF_ECCPUBLICKEYBLOB pTempECCPubKeyBlob = 1;
+		WST_PROTO_UINT32 phAgreementHandle = 2;
+}
+
+/**********************SKF_GenerateKeyWithECC************************/
+message Req_SKF_GenerateKeyWithECC{
+		WST_PROTO_UINT32 hAgreementHandle = 1;
+		SKF_ECCPUBLICKEYBLOB pECCPubKeyBlob = 2;
+		SKF_ECCPUBLICKEYBLOB pTempECCPubKeyBlob = 3;
+		bytes pbID = 4;
+		WST_PROTO_UINT32 ulIDLen = 5;
+		WST_PROTO_UINT32 phKeyHandle = 6;
+}
+
+message Rsp_SKF_GenerateKeyWithECC{
+		WST_PROTO_UINT32 phKeyHandle = 1;
+}
+
+/**********************SKF_ExportPublicKey************************/
+message Req_SKF_ExportPublicKey{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_BOOL bSignFlag = 2;
+		bytes pbBlob = 3;
+		WST_PROTO_UINT32 pulBlobLen = 4;
+}
+
+message Rsp_SKF_ExportPublicKey{
+		bytes pbBlob = 1;
+		WST_PROTO_UINT32 pulBlobLen = 2;
+}
+
+/**********************SKF_ImportSessionKey************************/
+message Req_SKF_ImportSessionKey{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 ulAlgID = 2;
+		bytes pbWrappedData = 3;
+		WST_PROTO_UINT32 ulWrappedLen = 4;
+		WST_PROTO_UINT32 phKey = 5;
+}
+
+message Rsp_SKF_ImportSessionKey{
+		WST_PROTO_UINT32 phKey = 1;
+}
+
+/**********************SKF_SetSymmKey************************/
+message Req_SKF_SetSymmKey{
+		WST_PROTO_UINT32 hDev = 1;
+		bytes pbKey = 2;
+		WST_PROTO_UINT32 ulAlgID = 3;
+		WST_PROTO_UINT32 phKey = 4;
+}
+
+message Rsp_SKF_SetSymmKey{
+		WST_PROTO_UINT32 phKey = 1;
+}
+
+/**********************SKF_EncryptInit************************/
+message Req_SKF_EncryptInit{
+		WST_PROTO_UINT32 hKey = 1;
+		SKF_BLOCKCIPHERPARAM EncryptParam = 2;
+}
+
+message Rsp_SKF_EncryptInit{
+
+}
+
+/**********************SKF_Encrypt************************/
+message Req_SKF_Encrypt{
+		WST_PROTO_UINT32 hKey = 1;
+		bytes pbData = 2;
+		WST_PROTO_UINT32 ulDataLen = 3;
+		bytes pbEncryptedData = 4;
+		WST_PROTO_UINT32 pulEncryptedLen = 5;
+}
+
+message Rsp_SKF_Encrypt{
+		bytes pbEncryptedData = 1;
+		WST_PROTO_UINT32 pulEncryptedLen = 2;
+}
+
+/**********************SKF_EncryptUpdate************************/
+message Req_SKF_EncryptUpdate{
+		WST_PROTO_UINT32 hKey = 1;
+		bytes pbData = 2;
+		WST_PROTO_UINT32 ulDataLen = 3;
+		bytes pbEncryptedData = 4;
+		WST_PROTO_UINT32 pulEncryptedLen = 5;
+}
+
+message Rsp_SKF_EncryptUpdate{
+		bytes pbEncryptedData = 1;
+		WST_PROTO_UINT32 pulEncryptedLen = 2;
+}
+
+
+/**********************SKF_EncryptFinal************************/
+message Req_SKF_EncryptFinal{
+		WST_PROTO_UINT32 hKey = 1;
+		bytes pbEncryptedData = 2;
+		WST_PROTO_UINT32 pulEncryptedDataLen = 3;
+}
+
+message Rsp_SKF_EncryptFinal{
+		bytes pbEncryptedData = 1;
+		WST_PROTO_UINT32 pulEncryptedDataLen = 2;
+}
+
+/**********************SKF_DecryptInit************************/
+message Req_SKF_DecryptInit{
+		WST_PROTO_UINT32 hKey = 1;
+		SKF_BLOCKCIPHERPARAM DecryptParam = 2;
+}
+
+message Rsp_SKF_DecryptInit{
+
+}
+
+/**********************SKF_Decrypt************************/
+message Req_SKF_Decrypt{
+		WST_PROTO_UINT32 hKey = 1;
+		bytes pbEncryptedData = 2;
+		WST_PROTO_UINT32 ulEncryptedLen = 3;
+		bytes pbData = 4;
+		WST_PROTO_UINT32 pulDataLen = 5;
+}
+
+message Rsp_SKF_Decrypt{
+		bytes pbData = 1;
+		WST_PROTO_UINT32 pulDataLen = 2;
+}
+
+/**********************SKF_DecryptUpdate************************/
+message Req_SKF_DecryptUpdate{
+		WST_PROTO_UINT32 hKey = 1;
+		bytes pbEncryptedData = 2;
+		WST_PROTO_UINT32 ulEncryptedLen = 3;
+		bytes pbData = 4;
+		WST_PROTO_UINT32 pulDataLen = 5;
+}
+
+message Rsp_SKF_DecryptUpdate{
+		bytes pbData = 1;
+		WST_PROTO_UINT32 pulDataLen = 2;
+}
+
+
+/**********************SKF_DecryptFinal************************/
+message Req_SKF_DecryptFinal{
+		WST_PROTO_UINT32 hKey = 1;
+		bytes pbPlainText = 2;
+		WST_PROTO_UINT32 pulPlainTextLen = 3;
+}
+
+message Rsp_SKF_DecryptFinal{
+		bytes pbPlainText = 1;
+		WST_PROTO_UINT32 pulPlainTextLen = 2;
+}
+
+
+
+
+/**********************SKF_DigestInit************************/
+message Req_SKF_DigestInit{
+		WST_PROTO_UINT32 hDev = 1;
+		WST_PROTO_UINT32 ulAlgID = 2;
+		SKF_ECCPUBLICKEYBLOB pPubKey = 3;
+		bytes pucID = 4;
+		WST_PROTO_UINT32 ulIDLen = 5;
+		WST_PROTO_UINT32 phHash = 6;
+}
+
+message Rsp_SKF_DigestInit{
+		WST_PROTO_UINT32 phHash = 1;
+}
+
+/**********************SKF_Digest************************/
+message Req_SKF_Digest{
+		WST_PROTO_UINT32 hHash = 1;
+		bytes pbData = 2;
+		WST_PROTO_UINT32 ulDataLen = 3;
+		bytes pbHashData = 4;
+		WST_PROTO_UINT32 pulHashLen = 5;
+}
+
+message Rsp_SKF_Digest{
+		bytes pbHashData = 1;
+		WST_PROTO_UINT32 pulHashLen = 2;
+}
+
+/**********************SKF_DigestUpdate************************/
+message Req_SKF_DigestUpdate{
+		WST_PROTO_UINT32 hHash = 1;
+		bytes pbData = 2;
+		WST_PROTO_UINT32 ulDataLen = 3;
+}
+
+message Rsp_SKF_DigestUpdate{
+
+}
+
+/**********************SKF_DigestFinal************************/
+message Req_SKF_DigestFinal{
+		WST_PROTO_UINT32 hHash = 1;
+		bytes pHashData = 2;
+		WST_PROTO_UINT32 pulHashLen = 3;
+}
+
+message Rsp_SKF_DigestFinal{
+		bytes pHashData = 1;
+		WST_PROTO_UINT32 pulHashLen = 2;
+}
+
+/**********************SKF_MacInit************************/
+message Req_SKF_MacInit{
+		WST_PROTO_UINT32 hKey = 1;
+		SKF_BLOCKCIPHERPARAM MacParam = 2;
+		WST_PROTO_UINT32 phMac = 3;
+}
+
+message Rsp_SKF_MacInit{
+		WST_PROTO_UINT32 phMac = 1;
+}
+
+/**********************SKF_Mac************************/
+message Req_SKF_Mac{
+		WST_PROTO_UINT32 hMac = 1;
+		bytes pbData = 2;
+		WST_PROTO_UINT32 ulDataLen = 3;
+		bytes pbMacData = 4;
+		WST_PROTO_UINT32 pulMacLen = 5;
+}
+
+message Rsp_SKF_Mac{
+		bytes pbMacData = 1;
+		WST_PROTO_UINT32 pulMacLen = 2;
+}
+
+/**********************SKF_MacUpdate************************/
+message Req_SKF_MacUpdate{
+		WST_PROTO_UINT32 hMac = 1;
+		bytes pbData = 2;
+		WST_PROTO_UINT32 ulDataLen = 3;
+}
+
+message Rsp_SKF_MacUpdate{
+
+}
+
+/**********************SKF_MacFinal************************/
+message Req_SKF_MacFinal{
+		WST_PROTO_UINT32 hMac = 1;
+		bytes pbMacData = 2;
+		WST_PROTO_UINT32 pulMacDataLen = 3;
+}
+
+message Rsp_SKF_MacFinal{
+		bytes pbMacData = 2;
+		WST_PROTO_UINT32 pulMacDataLen = 3;
+}
+
+/**********************SKF_CloseHandle************************/
+message Req_SKF_CloseHandle{
+		WST_PROTO_UINT32 hHandle = 1;
+}
+
+message Rsp_SKF_CloseHandle{
+
+}
+
+/**********************SKF_Transmit************************/
+message Req_SKF_Transmit{
+		WST_PROTO_UINT32 hDev = 1;
+		bytes pbCommand = 2;
+		WST_PROTO_UINT32 ulCommandLen = 3;
+		bytes pbData = 4;
+		WST_PROTO_UINT32 pulDataLen = 5;
+}
+
+message Rsp_SKF_Transmit{
+		bytes pbData = 1;
+		WST_PROTO_UINT32 pulDataLen = 2;
+}
+
+/**********************SKF_ImportCertificate************************/
+message Req_SKF_ImportCertificate{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_BOOL bSignFlag = 2;
+		bytes pbCert = 3;
+		WST_PROTO_UINT32 ulCertLen = 4;
+}
+
+message Rsp_SKF_ImportCertificate{
+
+}
+
+/**********************SKF_ExportCertificate************************/
+message Req_SKF_ExportCertificate{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_BOOL bSignFlag = 2;
+		bytes pbCert = 4;
+		WST_PROTO_UINT32 pulCertLen = 5;
+}
+
+message Rsp_SKF_ExportCertificate{
+		bytes pbCert = 1;
+		WST_PROTO_UINT32 pulCertLen = 2;
+}
+
+/**********************SKF_GetContainerProperty************************/
+message Req_SKF_GetContainerProperty{
+		WST_PROTO_UINT32 hContainer = 1;
+		WST_PROTO_UINT32 pulConProperty = 2;
+}
+
+message Rsp_SKF_GetContainerProperty{
+		WST_PROTO_UINT32 pulConProperty = 1;
+}

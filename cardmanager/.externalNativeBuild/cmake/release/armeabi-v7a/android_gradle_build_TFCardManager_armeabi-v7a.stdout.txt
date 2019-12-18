@@ -1,0 +1,26 @@
+[1/2] Building CXX object CMakeFiles/TFCardManager.dir/src/main/jni/TFCardManager.cpp.o
+/home/wjr/CSM/cardmanager/src/main/jni/TFCardManager.cpp:24:9: warning: 'SOFT_CARD_EXTERN_INTERFACE' macro redefined [-Wmacro-redefined]
+#define SOFT_CARD_EXTERN_INTERFACE
+        ^
+<command line>:3:9: note: previous definition is here
+#define SOFT_CARD_EXTERN_INTERFACE 1
+        ^
+/home/wjr/CSM/cardmanager/src/main/jni/TFCardManager.cpp:221:58: warning: format specifies type 'unsigned long' but the argument has type 'jlong' (aka 'long long') [-Wformat]
+        LOGI(tag,"Login,opensession fail with ret = %lx",ret);
+                                                    ~~~  ^~~
+                                                    %llx
+/home/wjr/CSM/cardmanager/src/main/jni/TFCardManager.cpp:21:66: note: expanded from macro 'LOGI'
+#define LOGI(tag,...) __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__);
+                                                                 ^~~~~~~~~~~
+/home/wjr/CSM/cardmanager/src/main/jni/TFCardManager.cpp:234:33: warning: format specifies type 'unsigned long' but the argument has type 'jlong' (aka 'long long') [-Wformat]
+    LOGI(tag,"login return %lx",ret);
+                           ~~~  ^~~
+                           %llx
+/home/wjr/CSM/cardmanager/src/main/jni/TFCardManager.cpp:21:66: note: expanded from macro 'LOGI'
+#define LOGI(tag,...) __android_log_print(ANDROID_LOG_INFO, tag, __VA_ARGS__);
+                                                                 ^~~~~~~~~~~
+/home/wjr/CSM/cardmanager/src/main/jni/TFCardManager.cpp:520:10: warning: result of comparison against a string literal is unspecified (use strncmp instead) [-Wstring-compare]
+    if(s == "硬卡，华大")
+         ^  ~~~~~~~~~~~~
+4 warnings generated.
+[2/2] Linking CXX shared library ../../../../build/intermediates/cmake/release/obj/armeabi-v7a/libTFCardManager.so

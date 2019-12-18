@@ -1,0 +1,82 @@
+
+{
+	"buildFiles" : [ "/home/wjr/CSM/cardmanager/CMakeLists.txt" ],
+	"cleanCommands" : 
+	[
+		"/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target clean"
+	],
+	"cppFileExtensions" : [ "cpp" ],
+	"libraries" : 
+	{
+		"Client-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "Client",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target Client",
+			"buildType" : "debug",
+			"output" : "/home/wjr/CSM/cardmanager/build/intermediates/cmake/debug/obj/armeabi-v7a/libClient.so",
+			"toolchain" : "330248480682546533"
+		},
+		"RemoteCallClient-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "RemoteCallClient",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target RemoteCallClient",
+			"buildType" : "debug",
+			"output" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/debug/armeabi-v7a/libRemoteCallClient.a",
+			"toolchain" : "330248480682546533"
+		},
+		"SKF_JNI-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "SKF_JNI",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target SKF_JNI",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSKF_JNI_EXPORTS -DSOFT_CARD_EXTERN_INTERFACE -I../../../../src/main/jni -I../../../../../csm/src/main/jni/SKF  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/cardmanager/src/main/jni/skfjni.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/home/wjr/CSM/cardmanager/build/intermediates/cmake/debug/obj/armeabi-v7a/libSKF_JNI.so",
+			"toolchain" : "330248480682546533"
+		},
+		"TFCardManager-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "TFCardManager",
+			"buildCommand" : "/home/wjr/Android/Sdk/cmake/3.6.4111459/bin/cmake --build /home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/debug/armeabi-v7a --target TFCardManager",
+			"buildType" : "debug",
+			"files" : 
+			[
+				
+				{
+					"flags" : "  --target=armv7-none-linux-androideabi21 --gcc-toolchain=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64 --sysroot=/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/sysroot  -DHAVE_PTHREAD -DSCP02_ENCRYPT -DSOFT_CARD_EXTERN_INTERFACE -DTFCardManager_EXPORTS -I../../../../../csm/src/main/jni/P11 -I../../../../../csm/src/main/jni -I../../../../../csm/src/main/jni/plog  -g -DANDROID -fdata-sections -ffunction-sections -funwind-tables -fstack-protector-strong -no-canonical-prefixes -fno-addrsig -march=armv7-a -mthumb -Wa,--noexecstack -Wformat -Werror=format-security   -O0 -fno-limit-debug-info  -fPIC -fvisibility=hidden    -c ",
+					"src" : "/home/wjr/CSM/cardmanager/src/main/jni/TFCardManager.cpp",
+					"workingDirectory" : "/home/wjr/CSM/cardmanager/.externalNativeBuild/cmake/debug/armeabi-v7a"
+				}
+			],
+			"output" : "/home/wjr/CSM/cardmanager/build/intermediates/cmake/debug/obj/armeabi-v7a/libTFCardManager.so",
+			"toolchain" : "330248480682546533"
+		},
+		"protobuf-Debug-armeabi-v7a" : 
+		{
+			"abi" : "armeabi-v7a",
+			"artifactName" : "protobuf",
+			"buildType" : "debug",
+			"output" : "/home/wjr/CSM/cardmanager/../csm/src/main/jniLibs/armeabi-v7a/libprotobuf_3.7_static.a",
+			"toolchain" : "330248480682546533"
+		}
+	},
+	"toolchains" : 
+	{
+		"330248480682546533" : 
+		{
+			"cCompilerExecutable" : "/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang",
+			"cppCompilerExecutable" : "/home/wjr/Android/Sdk/ndk-bundle/toolchains/llvm/prebuilt/linux-x86_64/bin/clang++"
+		}
+	}
+}
